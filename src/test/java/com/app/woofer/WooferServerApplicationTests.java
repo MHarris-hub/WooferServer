@@ -1,4 +1,4 @@
-package com.app.wooferserver;
+package com.app.woofer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

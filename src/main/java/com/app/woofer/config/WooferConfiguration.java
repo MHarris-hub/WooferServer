@@ -1,4 +1,4 @@
-package com.app.wooferserver.config;
+package com.app.woofer.config;
 
 
 
@@ -25,7 +25,7 @@ public class WooferConfiguration {
 	public Docket generateUserApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.app.wooferserver"))
+				.apis(RequestHandlerSelectors.basePackage("com.app.woofer"))
 				.build();
 	}
 	

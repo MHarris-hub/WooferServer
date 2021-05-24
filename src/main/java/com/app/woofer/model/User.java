@@ -1,4 +1,4 @@
-package com.app.wooferserver.model;
+package com.app.woofer.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

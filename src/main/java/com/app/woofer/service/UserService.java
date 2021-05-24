@@ -1,8 +1,8 @@
-package com.app.wooferserver.service;
+package com.app.woofer.service;
 
 import java.util.List;
 
-import com.app.wooferserver.model.User;
+import com.app.woofer.model.User;
 
 public interface UserService {
 	

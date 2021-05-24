@@ -1,4 +1,4 @@
-package com.app.wooferserver.service;
+package com.app.woofer.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.app.wooferserver.model.User;
-import com.app.wooferserver.repository.UserRepository;
+import com.app.woofer.model.User;
+import com.app.woofer.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService{

@@ -1,4 +1,4 @@
-package com.app.wooferserver.controller;
+package com.app.woofer.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.app.wooferserver.model.User;
-import com.app.wooferserver.service.UserService;
+import com.app.woofer.model.User;
+import com.app.woofer.service.UserService;
 
 
 
