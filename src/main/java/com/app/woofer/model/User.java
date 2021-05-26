@@ -1,10 +1,6 @@
 package com.app.woofer.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,14 +10,19 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class User {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	private int id; //primary key and serial
-	private String username;
-	private String password;
-	private String firstName;
-	private String lastName;
-	
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private int id;
+    private String username;
+    private String password;
+    private String name;
+    private String email;
+    private String dob;
+    @Column(length = 10)
+    private String phone;
 
+    public User(String username, String password){
+        this.username = username;
+        this.password = password;
+    }
 }

@@ -8,12 +8,10 @@ import org.springframework.stereotype.Repository;
 import com.app.woofer.model.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer>{
-
-	//Basic getters using desired field as parameter, find is a keyword of JPA for SQL translation
-	public List<User> findUsersByLastName(String lastName);
-	public List<User> findUsersByFirstName(String firstName);
-	public List<User> findUsersByPassword(String password);
-	public User findUserByUsername(String username);
-	
+public interface UserRepository extends JpaRepository<User, Integer> {
+    //Basic getters using desired field as parameter, find is a keyword of JPA for SQL translation
+    List<User> findUsersByName(String name);
+    List<User> findUsersByPassword(String password);
+    User findUserByUsername(String username);
+    User findUserByEmail(String email);
 }

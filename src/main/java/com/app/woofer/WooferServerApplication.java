@@ -1,5 +1,6 @@
 package com.app.woofer;
 
+import lombok.NoArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
