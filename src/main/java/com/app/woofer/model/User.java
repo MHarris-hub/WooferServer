@@ -1,9 +1,9 @@
 package com.app.woofer.model;
 
+import javax.persistence.*;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
@@ -13,11 +13,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
-
-    public User(String username, String password){
-        this.username = username;
-        this.password = password;
-    }
     private String username;
     private String password;
     private String name;
@@ -25,4 +20,9 @@ public class User {
     private String dob;
     @Column(length = 10)
     private String phone;
+
+    public User(String username, String password){
+        this.username = username;
+        this.password = password;
+    }
 }
