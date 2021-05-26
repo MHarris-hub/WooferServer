@@ -46,8 +46,8 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User getUserByUsername(String username) {
-        return userRepository.findUserByUsername(username);
+    public User getByUsername(String username) {
+        return null;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public boolean login(User user) {
-        User usernameProvided = getUserByUsername(user.getUsername());
+        User usernameProvided = getByUsername(user.getUsername());
         // Works because users are limited to distinct username
         if(encoder.matches(user.getPassword(), usernameProvided.getPassword())){
             return true;
@@ -78,11 +78,7 @@ public class UserServiceImpl implements UserService{
         User user;
 
         //isPresent() checks for non-null values in userOptional and if true get() will return value held by userOptional
-        if(userOptional.isPresent()) {
-            user  = userOptional.get();
-        }else {
-            user = null;
-        }
+        user = userOptional.orElse(null);
 
         return user;
     }
