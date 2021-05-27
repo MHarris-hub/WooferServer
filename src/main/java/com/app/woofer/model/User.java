@@ -38,9 +38,4 @@ public class User {
     private String dob;
     @Column(length = 10)
     private String phone;
-
-    public User(String username, String password){
-        this.username = username;
-        this.password = password;
-    }
 }

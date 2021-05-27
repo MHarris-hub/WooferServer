@@ -2,20 +2,30 @@ package com.app.woofer.service;
 
 import com.app.woofer.model.Post;
 import com.app.woofer.repository.PostRepository;
+import com.app.woofer.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 @Service
 public class PostServiceImp implements PostService{
 
-    @Autowired
     PostRepository postRepository;
+    UserRepository userRepository;
+
+    @Autowired
+    public PostServiceImp(PostRepository postRepository, UserRepository userRepository) {
+        this.postRepository = postRepository;
+        this.userRepository = userRepository;
+    }
 
     @Override
     public Post addPost(Post post) {
-        return postRepository.save(post);
+        post = postRepository.save(post);
+        post.setUser(userRepository.findById(post.getUserID()).orElse(null));
+        return post;
     }
 
     @Override
