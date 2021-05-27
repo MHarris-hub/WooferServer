@@ -2,12 +2,10 @@ package com.app.woofer.service;
 
 import com.app.woofer.exceptions.WooferException;
 import com.app.woofer.model.User;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.app.woofer.model.User;
 import com.app.woofer.repository.UserRepository;
 
 import java.util.List;

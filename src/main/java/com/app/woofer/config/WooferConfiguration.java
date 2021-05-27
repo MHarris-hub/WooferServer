@@ -32,6 +32,7 @@ public class WooferConfiguration extends WebSecurityConfigurerAdapter{
 				.antMatchers("/comment").permitAll()
 				.antMatchers("/comment/user/*").permitAll()
 				.antMatchers("/comment/post/*").permitAll()
+				.antMatchers("/post/*").permitAll()
 				.anyRequest().authenticated();
 	}
 	@Bean

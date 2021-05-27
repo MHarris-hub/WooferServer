@@ -1,5 +1,4 @@
 package com.app.woofer.model;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -18,11 +17,13 @@ public class Post {
     public Post(int id){
         this.id = id;
     }
-   
+
     @ManyToOne
+
     @JoinColumn(name = "userID", referencedColumnName = "id", insertable = false, updatable = false )
     private User user;
 
+    @Column(columnDefinition = "default CURRENT_TIMESTAMP")
     private Instant timestamp;
     private int userID;
     private String body;

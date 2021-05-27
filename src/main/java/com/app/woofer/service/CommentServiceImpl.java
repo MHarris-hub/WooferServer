@@ -1,7 +1,6 @@
 package com.app.woofer.service;
 
 import com.app.woofer.model.Comment;
-import com.app.woofer.model.User;
 import com.app.woofer.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
