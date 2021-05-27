@@ -18,6 +18,9 @@ public class ReturnPost {
     private int likes;
     private int comments;
 
+    public ReturnPost() {
+    }
+
     public ReturnPost(Post post){
         username = post.getUser().getUsername();
         name = post.getUser().getName();

@@ -4,6 +4,9 @@ import com.app.woofer.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+import org.hibernate.annotations.FetchProfile;
 
 import javax.persistence.*;
 import java.time.Instant;
@@ -17,13 +20,12 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
-    @ManyToOne
-    @JoinColumn(name = "userID", referencedColumnName = "id")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private User user;
 
     private Instant timestamp;
-    @Column(insertable = false, updatable = false)
-    private int userID; //dont delete this -mish
+    private int userID;
     private String body;
 
     public Post(int id, int userID, String body) {

@@ -42,12 +42,12 @@ public class PostController {
     }
 
     @GetMapping("/post/{id}")
-    public ResponseEntity<ReturnPost> getPost(@RequestBody int id){
+    public ResponseEntity<ReturnPost> getPost(@PathVariable int id){
         return ResponseEntity.ok(new ReturnPost(postService.getPost(id)));
     }
 
     @GetMapping("/posts/user/{id}")
-    public ResponseEntity<List<ReturnPost>> getPostsByUser(@RequestBody int id){
+    public ResponseEntity<List<ReturnPost>> getPostsByUser(@PathVariable int id){
         return ResponseEntity.ok(ReturnPost.listConvert(postService.getByUserID(id)));
     }
 
