@@ -1,9 +1,11 @@
 package com.app.woofer.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -18,6 +20,11 @@ public class User {
         this.username = username;
         this.password = password;
     }
+
+    public User(int id){
+        this.id = id;
+    }
+
     private String username;
     private String password;
     private String name;

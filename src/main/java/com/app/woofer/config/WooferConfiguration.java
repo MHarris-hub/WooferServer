@@ -1,5 +1,6 @@
 package com.app.woofer.config;
 
+import com.app.woofer.model.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -26,8 +27,15 @@ public class WooferConfiguration extends WebSecurityConfigurerAdapter{
 	public void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
 				.antMatchers("/user/*").permitAll()
+				.antMatchers("/user").permitAll()
+				.antMatchers("/post").permitAll()
+				.antMatchers("/comment").permitAll()
+				.antMatchers("/comment/user/*").permitAll()
+				.antMatchers("/comment/post/*").permitAll()
 				.anyRequest().authenticated();
 	}
+	@Bean
+	public User getUser(){return new User();};
 	@Bean
 	public Docket generateUserApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
