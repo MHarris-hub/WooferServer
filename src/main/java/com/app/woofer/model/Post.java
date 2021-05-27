@@ -1,20 +1,9 @@
 package com.app.woofer.model;
-
-import com.app.woofer.model.User;
-
-import lombok.AllArgsConstructor;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-import org.hibernate.annotations.FetchProfile;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.List;
 
 @Entity
 @Table(name = "posts")
@@ -28,14 +17,13 @@ public class Post {
     public Post(int id){
         this.id = id;
     }
-   
+
     @ManyToOne
-    @JoinColumn(name = "userID", referencedColumnName = "id")
+    @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private User user;
 
+    @Column(columnDefinition = "default CURRENT_TIMESTAMP")
     private Instant timestamp;
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private int userID;
     private String body;
 

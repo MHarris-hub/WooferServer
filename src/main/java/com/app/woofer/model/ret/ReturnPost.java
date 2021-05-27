@@ -1,10 +1,8 @@
 package com.app.woofer.model.ret;
 
 import com.app.woofer.model.Post;
-import javafx.geometry.Pos;
 import lombok.Data;
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,6 +1,5 @@
 package com.app.woofer.controller;
 
-import com.app.woofer.model.Post;
 import com.app.woofer.model.ret.ReturnPost;
 import com.app.woofer.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,7 +51,7 @@ public class PostController {
     }
 
     @GetMapping("/posts")
-    public ResponseEntity<List<ReturnPost>> GetAllPosts(){
+    public ResponseEntity<List<ReturnPost>> getAllPosts(){
         return ResponseEntity.ok(ReturnPost.listConvert(postService.getAll()));
     }
 }

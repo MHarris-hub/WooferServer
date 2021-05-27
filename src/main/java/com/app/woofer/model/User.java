@@ -1,16 +1,9 @@
 package com.app.woofer.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
-
-import javax.persistence.*;
-
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "users")
@@ -38,9 +31,4 @@ public class User {
     private String dob;
     @Column(length = 10)
     private String phone;
-
-    public User(String username, String password){
-        this.username = username;
-        this.password = password;
-    }
 }

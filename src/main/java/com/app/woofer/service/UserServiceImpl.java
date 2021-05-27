@@ -1,12 +1,10 @@
 package com.app.woofer.service;
 
 import com.app.woofer.model.User;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.app.woofer.model.User;
 import com.app.woofer.repository.UserRepository;
 
 import java.util.List;
@@ -59,11 +57,7 @@ public class UserServiceImpl implements UserService{
     public boolean login(User user) {
         User usernameProvided = getByUsername(user.getUsername());
         // Works because users are limited to distinct username
-        if(encoder.matches(user.getPassword(), usernameProvided.getPassword())){
-            return true;
-        }else{
-            return false;
-        }
+        return encoder.matches(user.getPassword(), usernameProvided.getPassword());
     }
 
     @Override
