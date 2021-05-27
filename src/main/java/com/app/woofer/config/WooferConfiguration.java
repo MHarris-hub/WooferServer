@@ -1,26 +1,33 @@
 package com.app.woofer.config;
 
-
-
-import javax.sql.DataSource;
-
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-
-import com.zaxxer.hikari.HikariDataSource;
 
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 @Configuration
 @EnableSwagger2
-public class WooferConfiguration {
-	
+@EnableWebSecurity
+public class WooferConfiguration extends WebSecurityConfigurerAdapter{
+
+	@Bean
+	public BCryptPasswordEncoder encoder() {
+		return new BCryptPasswordEncoder();
+	}
+	@Override
+	public void configure(HttpSecurity http) throws Exception {
+		http.csrf().disable().authorizeRequests()
+				.antMatchers("/user/*").permitAll()
+				.anyRequest().authenticated();
+	}
 	@Bean
 	public Docket generateUserApi() {
 		return new Docket(DocumentationType.SWAGGER_2)

@@ -1,15 +1,17 @@
 package com.app.woofer.repository;
 
-import com.app.woofer.model.User;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import com.app.woofer.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
     //Basic getters using desired field as parameter, find is a keyword of JPA for SQL translation
-    public List<User> findUsersByName(String name);
-    public List<User> findUsersByPassword(String password);
-    public User findUserByUsername(String username);
+    List<User> findUsersByName(String name);
+    List<User> findUsersByPassword(String password);
+    User findUserByUsername(String username);
+    User findUserByEmail(String email);
 }
