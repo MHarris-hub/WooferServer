@@ -1,5 +1,6 @@
 package com.app.woofer.service;
 
+import com.app.woofer.exceptions.WooferException;
 import com.app.woofer.model.User;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +48,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User getByUsername(String username) {
-        return null;
+        return userRepository.findByUsername(username);
     }
 
     @Override
@@ -57,12 +58,11 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public boolean login(User user) {
-        User usernameProvided = getByUsername(user.getUsername());
-        // Works because users are limited to distinct username
-        if(encoder.matches(user.getPassword(), usernameProvided.getPassword())){
-            return true;
-        }else{
-            return false;
+        User storedUser = userRepository.findByUsername(user.getUsername());
+        if (storedUser != null) {
+            return encoder.matches(user.getPassword(), storedUser.getPassword());
+        } else {
+            throw new WooferException("Invalid username/password");
         }
     }
 

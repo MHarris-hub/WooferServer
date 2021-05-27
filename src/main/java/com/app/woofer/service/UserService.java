@@ -2,7 +2,6 @@ package com.app.woofer.service;
 
 import java.util.List;
 
-import com.app.woofer.exceptions.WooferException;
 import com.app.woofer.model.User;
 
 public interface UserService {
