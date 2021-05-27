@@ -1,20 +1,9 @@
 package com.app.woofer.model;
-
-import com.app.woofer.model.User;
-import lombok.AllArgsConstructor;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-import org.hibernate.annotations.FetchProfile;
 
 import javax.persistence.*;
 import java.time.Instant;
-import java.util.List;
 
 @Entity
 @Table(name = "posts")
