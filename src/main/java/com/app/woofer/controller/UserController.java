@@ -1,16 +1,18 @@
 package com.app.woofer.controller;
 
-import com.app.woofer.model.User;
-import com.app.woofer.service.UserService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import com.app.woofer.model.User;
+import com.app.woofer.service.UserService;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://jenkins-testhfsga.s3-website-us-east-1.amazonaws.com")
 @RestController
+@RequestMapping("user")
 public class UserController {
-
 
     private final UserService userService;
 
@@ -20,46 +22,43 @@ public class UserController {
     }
 
     //GET requests
-    @GetMapping("/user/username/{username}")
+    @GetMapping("/username/{username}")
     public User getUserByUsername(@PathVariable String username) {
-        return userService.getUserByUsername(username);
+        return userService.getByUsername(username);
     }
 
-    @GetMapping("/user/password/{password}")
+    @GetMapping("/password/{password}")
     public List<User> getUsersByPassword(@PathVariable String password) {
         return userService.getUsersByPassword(password);
     }
 
-    @GetMapping("/user/name/{name}")
+    @GetMapping("/name/{name}")
     public List<User> getUsersByName(@PathVariable String name) {
         return userService.getUsersByName(name);
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/{id}")
     public User getUserById(@PathVariable int id) {
         return userService.getUserById(id);
     }
 
-    @GetMapping("/user/email/{email}")
+    @GetMapping("/email/{email}")
     public User getUserByEmail(@PathVariable String email) {
         return userService.getUserByEmail(email);
     }
 
     //POST requests
-    @PostMapping("/user/add")
+    @PostMapping("/add")
     public User addUser(@RequestBody User user) {
         return userService.addUser(user);
     }
 
-    @PostMapping("/user/login")
+    @PostMapping("/login")
     public boolean login(@RequestBody User user){return userService.login(user);}
 
     //DELETE requests
-    @DeleteMapping("/user/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public void removeUser(@PathVariable int id) {
         userService.removeUser(id);
     }
-
-
-
 }
