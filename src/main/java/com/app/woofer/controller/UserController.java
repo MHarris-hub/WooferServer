@@ -2,6 +2,7 @@ package com.app.woofer.controller;
 
 import java.util.List;
 
+import com.app.woofer.exceptions.WooferException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,8 +39,12 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public User getUserById(@PathVariable int id) {
-        return userService.getUserById(id);
+    public User getUserById(@PathVariable int id){
+        User user = userService.getUserById(id);
+        if (user == null) {
+            throw new WooferException("User not found");
+        }
+        return user;
     }
 
     @GetMapping("/email/{email}")
@@ -54,7 +59,13 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public boolean login(@RequestBody User user){return userService.login(user);}
+    public boolean login(@RequestBody User user){
+        if (!userService.login(user)) {
+            throw new WooferException("Invalid username/password");
+        }
+
+        return userService.login(user);
+    }
 
     //DELETE requests
     @DeleteMapping("/delete/{id}")

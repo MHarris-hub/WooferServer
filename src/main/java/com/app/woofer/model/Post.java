@@ -19,7 +19,8 @@ public class Post {
     }
 
     @ManyToOne
-    @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
+
+    @JoinColumn(name = "userID", referencedColumnName = "id", insertable = false, updatable = false )
     private User user;
 
     @Column(columnDefinition = "default CURRENT_TIMESTAMP")

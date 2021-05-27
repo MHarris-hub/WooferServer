@@ -2,7 +2,6 @@ package com.app.woofer.model.ret;
 
 import com.app.woofer.model.Post;
 import lombok.Data;
-
 import java.util.ArrayList;
 import java.util.List;
 
