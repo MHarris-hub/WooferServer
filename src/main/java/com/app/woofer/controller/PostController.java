@@ -4,6 +4,7 @@ import com.app.woofer.model.Post;
 import com.app.woofer.model.ret.ReturnPost;
 import com.app.woofer.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,23 +13,28 @@ import java.util.List;
 @RestController
 public class PostController {
 
-    @Autowired
     PostService postService;
 
+    @Autowired
+    public PostController(PostService postService){
+        this.postService = postService;
+    }
+
     @PostMapping("/post")
-    public ReturnPost addPost(@RequestBody Post post){
-        return new ReturnPost(postService.addPost(post));
+    public ResponseEntity<ReturnPost> addPost(@RequestBody ReturnPost post){
+        return ResponseEntity.ok(new ReturnPost(postService.addPost(post.toEntity())));
     }
 
     @PutMapping("/post")
-    public ReturnPost putPost(@RequestBody Post post){
-        return new ReturnPost(postService.putPost(post));
+    public ResponseEntity<ReturnPost> putPost(@RequestBody ReturnPost post){
+        return ResponseEntity.ok(new ReturnPost(postService.putPost(post.updateEntity(postService.getPost(post.getId())))));
     }
 
-    @DeleteMapping("/post")
-    public void remPost(@RequestBody Post post){
-        postService.remPost(post);
-    }
+//    @DeleteMapping("/post")
+//    public void remPost(@RequestBody ReturnPost post){
+//        postService.remPost(post);
+//    }
+    // I dont wont to fully delete this but Im suspicious that this wont run correctly
 
     @DeleteMapping("/post/{id}")
     public void remPost(@PathVariable int id){
@@ -36,17 +42,17 @@ public class PostController {
     }
 
     @GetMapping("/post/{id}")
-    public ReturnPost getPost(@RequestBody int id){
-        return new ReturnPost(postService.getPost(id));
+    public ResponseEntity<ReturnPost> getPost(@PathVariable int id){
+        return ResponseEntity.ok(new ReturnPost(postService.getPost(id)));
     }
 
     @GetMapping("/posts/user/{id}")
-    public List<ReturnPost> getPostsByUser(@RequestBody int id){
-        return ReturnPost.listConvert(postService.getByUserID(id));
+    public ResponseEntity<List<ReturnPost>> getPostsByUser(@PathVariable int id){
+        return ResponseEntity.ok(ReturnPost.listConvert(postService.getByUserID(id)));
     }
 
     @GetMapping("/posts")
-    public List<ReturnPost> GetAllPosts(){
-        return ReturnPost.listConvert(postService.getAll());
+    public ResponseEntity<List<ReturnPost>> GetAllPosts(){
+        return ResponseEntity.ok(ReturnPost.listConvert(postService.getAll()));
     }
 }
