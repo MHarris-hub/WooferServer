@@ -1,4 +1,5 @@
 package com.app.woofer.model;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,6 +10,7 @@ import java.time.Instant;
 @Table(name = "posts")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -17,10 +19,9 @@ public class Post {
     public Post(int id){
         this.id = id;
     }
-
-    @ManyToOne
-
-    @JoinColumn(name = "userID", referencedColumnName = "id", insertable = false, updatable = false )
+   
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private User user;
 
     @Column(columnDefinition = "default CURRENT_TIMESTAMP")
@@ -33,4 +34,6 @@ public class Post {
         this.userID = userID;
         this.body = body;
     }
+
+
 }
