@@ -3,6 +3,8 @@ package com.app.woofer.controller;
 import java.util.List;
 
 import com.app.woofer.exceptions.WooferException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +19,7 @@ import com.app.woofer.service.UserService;
 public class UserController {
 
     private final UserService userService;
+    private static final Logger logger = LogManager.getLogger(UserController.class);
 
     @Autowired
     public UserController(UserService userService){
@@ -43,6 +46,7 @@ public class UserController {
     @GetMapping("/{id}")
     public User getUserById(@PathVariable int id){
         User user = userService.getUserById(id);
+        logger.info("Searching for user with id: " + id);
         if (user == null) {
             throw new WooferException("User not found");
         }
