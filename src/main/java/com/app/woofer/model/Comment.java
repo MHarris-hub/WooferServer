@@ -17,8 +17,13 @@ public class Comment {
     private int id;
 
     @ManyToOne
+    @JoinColumn(name = "userId", referencedColumnName = "id")
+    private User user;
+
+    @ManyToOne
     @JoinColumn(name = "postId", referencedColumnName = "id")
     private Post post;
+    @Column(columnDefinition = "default CURRENT_TIMESTAMP")
     private Instant timestamp;
     private String body;
 }

@@ -21,11 +21,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
-    public User(String username, String password){
-        this.username = username;
-        this.password = password;
-    }
-
     public User(int id){
         this.id = id;
     }

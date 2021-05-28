@@ -29,13 +29,12 @@ public class Post {
         this.id = id;
     }
    
-    @ManyToOne
-    @JoinColumn(name = "userID", referencedColumnName = "id")
-    private User user;
-
-    private Instant timestamp;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
+    private User user;
+
+    @Column(columnDefinition = "default CURRENT_TIMESTAMP")
+    private Instant timestamp;
     private int userID;
     private String body;
 
