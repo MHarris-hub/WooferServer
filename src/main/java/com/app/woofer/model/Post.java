@@ -19,9 +19,9 @@ public class Post {
     public Post(int id){
         this.id = id;
     }
-
-    @ManyToOne
-    @JoinColumn(name = "userID", referencedColumnName = "id", insertable = false, updatable = false )
+   
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private User user;
 
     @Column(columnDefinition = "default CURRENT_TIMESTAMP")
