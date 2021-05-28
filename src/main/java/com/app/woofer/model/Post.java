@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.List;
 
 @Entity
 @Table(name = "posts")
@@ -23,6 +24,14 @@ public class Post {
     @ManyToOne
     @JoinColumn(name = "userID", referencedColumnName = "id", insertable = false, updatable = false )
     private User user;
+
+    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "Likes",
+            joinColumns = { @JoinColumn(name = "postId") },
+            inverseJoinColumns = { @JoinColumn(name = "userId") }
+    )
+    private List<User> likers;
 
     @Column(columnDefinition = "default CURRENT_TIMESTAMP")
     private Instant timestamp;

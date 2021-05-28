@@ -19,10 +19,10 @@ public class ReturnPost {
     }
 
     public ReturnPost(Post post){
-        username = post.getUser().getUsername();
-        name = post.getUser().getName();
+        username = post.getUser() == null ? "" : post.getUser().getUsername();
+        name = post.getUser() == null ? "" : post.getUser().getName();
         body = post.getBody();
-        likes = 0;
+        likes = post.getLikers() == null ? 0 : post.getLikers().size();
         comments = 0;
         userId = post.getUserID();
         Id = post.getId();

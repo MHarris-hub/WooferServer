@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5500") //angular running on port 5500
+@CrossOrigin(origins = "http://localhost:4200") //angular running on port 5500
 @RestController
 public class PostController {
 
