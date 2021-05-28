@@ -59,11 +59,7 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public boolean login(@RequestBody User user){
-        if (!userService.login(user)) {
-            throw new WooferException("Invalid username/password");
-        }
-
+    public User login(@RequestBody User user){
         return userService.login(user);
     }
 
