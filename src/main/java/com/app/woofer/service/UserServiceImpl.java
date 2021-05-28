@@ -1,12 +1,11 @@
 package com.app.woofer.service;
 
+import com.app.woofer.exceptions.WooferException;
 import com.app.woofer.model.User;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.app.woofer.model.User;
 import com.app.woofer.repository.UserRepository;
 
 import java.util.List;
@@ -47,7 +46,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User getByUsername(String username) {
-        return null;
+        return userRepository.findByUsername(username);
     }
 
     @Override
@@ -56,13 +55,12 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public boolean login(User user) {
-        User usernameProvided = getByUsername(user.getUsername());
-        // Works because users are limited to distinct username
-        if(encoder.matches(user.getPassword(), usernameProvided.getPassword())){
-            return true;
-        }else{
-            return false;
+    public User login(User user) {
+        User storedUser = userRepository.findByUsername(user.getUsername());
+        if (storedUser != null && (encoder.matches(user.getPassword(), storedUser.getPassword()))) {
+            return storedUser;
+        } else {
+            throw new WooferException("Invalid username/password");
         }
     }
 

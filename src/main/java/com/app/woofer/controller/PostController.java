@@ -1,6 +1,5 @@
 package com.app.woofer.controller;
 
-import com.app.woofer.model.Post;
 import com.app.woofer.model.ret.ReturnPost;
 import com.app.woofer.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,11 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @CrossOrigin(origins = "http://localhost:4200") //angular running on port 5500
 @RestController
 public class PostController {
 
-    PostService postService;
+    private PostService postService;
 
     @Autowired
     public PostController(PostService postService){
@@ -34,7 +34,7 @@ public class PostController {
 //    public void remPost(@RequestBody ReturnPost post){
 //        postService.remPost(post);
 //    }
-    // I dont wont to fully delete this but Im suspicious that this wont run correctly
+    // I dont want to fully delete this but Im suspicious that this wont run correctly
 
     @DeleteMapping("/post/{id}")
     public void remPost(@PathVariable int id){
@@ -52,7 +52,7 @@ public class PostController {
     }
 
     @GetMapping("/posts")
-    public ResponseEntity<List<ReturnPost>> GetAllPosts(){
+    public ResponseEntity<List<ReturnPost>> getAllPosts(){
         return ResponseEntity.ok(ReturnPost.listConvert(postService.getAll()));
     }
 }

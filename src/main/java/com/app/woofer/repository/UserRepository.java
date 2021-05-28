@@ -12,6 +12,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     //Basic getters using desired field as parameter, find is a keyword of JPA for SQL translation
     List<User> findUsersByName(String name);
     List<User> findUsersByPassword(String password);
-    User findUserByUsername(String username);
+    User findByUsername(String username);
     User findUserByEmail(String email);
 }
