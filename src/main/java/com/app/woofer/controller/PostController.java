@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 public class PostController {
 
-    PostService postService;
+    private PostService postService;
 
     @Autowired
     public PostController(PostService postService){
@@ -33,7 +33,7 @@ public class PostController {
 //    public void remPost(@RequestBody ReturnPost post){
 //        postService.remPost(post);
 //    }
-    // I dont wont to fully delete this but Im suspicious that this wont run correctly
+    // I dont want to fully delete this but Im suspicious that this wont run correctly
 
     @DeleteMapping("/post/{id}")
     public void remPost(@PathVariable int id){
