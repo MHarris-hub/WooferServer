@@ -7,7 +7,6 @@ import com.app.woofer.repository.UserRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.security.core.parameters.P;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +15,7 @@ import java.util.Optional;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
-public class PostServiceImpTest {
+public class PostServiceImplTest {
 
     private PostService testSubject;
     private PostRepository mockedRepo;
@@ -28,7 +27,7 @@ public class PostServiceImpTest {
     void setUp() {
         mockedRepo = mock(PostRepository.class);
         mockedUserRepo = mock(UserRepository.class);
-        testSubject = new PostServiceImp(mockedRepo, mockedUserRepo);
+        testSubject = new PostServiceImpl(mockedRepo, mockedUserRepo);
     }
 
     @Test

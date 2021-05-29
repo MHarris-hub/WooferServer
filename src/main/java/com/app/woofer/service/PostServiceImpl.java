@@ -3,20 +3,23 @@ package com.app.woofer.service;
 import com.app.woofer.model.Post;
 import com.app.woofer.repository.PostRepository;
 import com.app.woofer.repository.UserRepository;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class PostServiceImp implements PostService{
+public class PostServiceImpl implements PostService{
 
     PostRepository postRepository;
     UserRepository userRepository;
+    private static final Logger logger = LogManager.getLogger(PostServiceImpl.class);
     private String blankPass = "password intentionally left blank";
 
     @Autowired
-    public PostServiceImp(PostRepository postRepository, UserRepository userRepository) {
+    public PostServiceImpl(PostRepository postRepository, UserRepository userRepository) {
         this.postRepository = postRepository;
         this.userRepository = userRepository;
     }
@@ -25,6 +28,7 @@ public class PostServiceImp implements PostService{
     public Post addPost(Post post) {
         post = postRepository.save(post);
         post.setUser(userRepository.findById(post.getUserID()).orElse(null));
+        logger.info("Post added with { ID: {} User ID: {} }", post.getId(), post.getUserID());
         return post;
     }
 
@@ -32,16 +36,19 @@ public class PostServiceImp implements PostService{
     public Post putPost(Post post) {
         Post ret = postRepository.save(post);
         ret.getUser().setPassword(blankPass);
+        logger.info("Post updated with { ID: {} }", post.getId());
         return ret;
     }
 
     @Override
     public void remPost(Post post) {
+        logger.info("Post deleted with { ID: {} }", post.getId());
         postRepository.delete(post);
     }
 
     @Override
     public void remPost(int id) {
+        logger.info("Post deleted with { ID: {} }", id);
         postRepository.deleteById(id);
     }
 
@@ -51,6 +58,7 @@ public class PostServiceImp implements PostService{
         if (ret != null){
             ret.getUser().setPassword(blankPass);
         }
+        logger.info("Post retrieved with { ID: {} }", id);
         return ret;
     }
 
@@ -60,6 +68,7 @@ public class PostServiceImp implements PostService{
         for (Post i: ret) {
             i.getUser().setPassword(blankPass);
         }
+        logger.info("Posts retrieved for user with { ID: {} }", id);
         return ret;
     }
 
@@ -69,6 +78,7 @@ public class PostServiceImp implements PostService{
         for (Post i: ret) {
             i.getUser().setPassword(blankPass);
         }
+        logger.info("All users retrieved");
         return ret;
     }
 }

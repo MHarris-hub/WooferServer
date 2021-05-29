@@ -34,3 +34,660 @@ Using generated security password: 065cf7e0-e906-411e-ba0a-58d9d9108424
 2021-05-28 15:49:54.549  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2021-05-28 15:49:54.575  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 24 ms
 2021-05-28 15:49:54.943  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-28 16:50:19.373  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 4844 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 16:50:19.381  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 16:50:20.149  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 16:50:20.223  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 4 JPA repository interfaces.
+2021-05-28 16:50:20.984  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 16:50:20.991  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:50:20.992  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 16:50:20.992  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 16:50:21.119  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 16:50:21.119  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
+2021-05-28 16:50:21.316  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 16:50:21.375  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 16:50:21.504  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 16:50:21.609  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 16:50:21.706  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 16:50:21.723  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 16:50:22.378  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 16:50:22.385  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 16:50:22.432  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 16:50:23.185  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 16:50:23.242  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d75880f7-99ec-49bc-b232-96edc48882bf
+
+2021-05-28 16:50:23.468  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@199806aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@48aa0813, org.springframework.security.web.header.HeaderWriterFilter@76220ef1, org.springframework.security.web.authentication.logout.LogoutFilter@30133a11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cbbfe29, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16d61071, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@300aa927, org.springframework.security.web.session.SessionManagementFilter@653e7b, org.springframework.security.web.access.ExceptionTranslationFilter@211da640, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a1c7619]
+2021-05-28 16:50:23.566  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 16:50:23.701  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:50:23.723  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 16:50:23.724  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 16:50:23.752  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 16:50:23.790  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 16:50:23.975  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.871 seconds (JVM running for 5.601)
+2021-05-28 16:51:01.454  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 14432 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 16:51:01.462  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 16:51:02.228  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 16:51:02.299  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 4 JPA repository interfaces.
+2021-05-28 16:51:03.004  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 16:51:03.013  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:51:03.014  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 16:51:03.014  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 16:51:03.141  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 16:51:03.141  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1638 ms
+2021-05-28 16:51:03.337  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 16:51:03.394  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 16:51:03.531  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 16:51:03.645  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 16:51:03.749  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 16:51:03.767  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 16:51:04.418  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 16:51:04.426  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 16:51:04.469  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 16:51:05.196  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 16:51:05.249  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 334db4d4-cdb2-4678-8664-c0e3714e76b4
+
+2021-05-28 16:51:05.450  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-28 16:51:05.551  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 16:51:05.698  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:51:05.722  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 16:51:05.723  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 16:51:05.746  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 16:51:05.779  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 16:51:05.960  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.769 seconds (JVM running for 5.465)
+2021-05-28 16:51:16.512  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 16:51:16.512  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 16:51:16.520  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-28 16:51:16.775  INFO Michael-DESKTOP --- [nio-9000-exec-2] c.a.w.s.UserServiceImpl                  : Invalid username/password - hello
+2021-05-28 16:53:08.583  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 8300 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 16:53:08.592  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 16:53:09.355  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 16:53:09.425  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 4 JPA repository interfaces.
+2021-05-28 16:53:10.159  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 16:53:10.167  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:53:10.168  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 16:53:10.168  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 16:53:10.302  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 16:53:10.302  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1669 ms
+2021-05-28 16:53:10.513  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 16:53:10.581  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 16:53:10.732  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 16:53:10.840  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 16:53:10.941  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 16:53:10.960  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 16:53:11.625  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 16:53:11.632  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 16:53:11.685  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 16:53:12.444  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 16:53:12.506  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e09ff1e9-c4a7-44b3-a4d3-f62a60ace88f
+
+2021-05-28 16:53:12.718  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-28 16:53:12.825  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 16:53:12.991  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:53:13.012  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 16:53:13.013  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 16:53:13.038  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 16:53:13.075  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 16:53:13.265  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.947 seconds (JVM running for 5.659)
+2021-05-28 16:57:20.731  INFO Michael-DESKTOP --- [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 16:57:20.732  INFO Michael-DESKTOP --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 16:57:20.740  INFO Michael-DESKTOP --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-28 16:57:20.985  INFO Michael-DESKTOP --- [nio-9000-exec-2] c.a.w.s.UserServiceImpl                  : Invalid username/password - hello
+2021-05-28 16:57:49.108  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 1112 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 16:57:49.119  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 16:57:49.877  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 16:57:49.954  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 4 JPA repository interfaces.
+2021-05-28 16:57:50.693  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 16:57:50.701  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:57:50.701  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 16:57:50.702  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 16:57:50.835  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 16:57:50.835  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
+2021-05-28 16:57:51.025  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 16:57:51.081  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 16:57:51.213  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 16:57:51.319  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 16:57:51.420  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 16:57:51.440  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 16:57:52.112  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 16:57:52.120  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 16:57:52.167  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 16:57:52.935  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 16:57:52.992  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5c0dea89-49b3-4d02-a5ad-e7a800954a37
+
+2021-05-28 16:57:53.203  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-28 16:57:53.306  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 16:57:53.455  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:57:53.479  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 16:57:53.480  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 16:57:53.501  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 16:57:53.533  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 16:57:53.702  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.9 seconds (JVM running for 5.61)
+2021-05-28 16:58:03.650  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 16:58:03.650  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 16:58:03.658  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-28 16:58:03.879  INFO Michael-DESKTOP --- [nio-9000-exec-1] c.a.w.s.UserServiceImpl                  : Invalid username/password with: Username: helloPassword: sefr
+2021-05-28 16:58:07.494  INFO Michael-DESKTOP --- [nio-9000-exec-2] c.a.w.s.UserServiceImpl                  : Invalid username/password with: Username: byePassword: sefr
+2021-05-28 16:59:03.303  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 14588 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 16:59:03.313  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 16:59:04.102  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 16:59:04.189  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 4 JPA repository interfaces.
+2021-05-28 16:59:04.924  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 16:59:04.932  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:59:04.932  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 16:59:04.933  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 16:59:05.060  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 16:59:05.060  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1708 ms
+2021-05-28 16:59:05.252  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 16:59:05.313  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 16:59:05.459  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 16:59:05.561  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 16:59:05.662  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 16:59:05.680  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 16:59:06.345  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 16:59:06.352  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 16:59:06.399  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 16:59:07.159  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 16:59:07.215  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4f615e9e-595b-44e4-b936-e117a3942536
+
+2021-05-28 16:59:07.425  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-28 16:59:07.533  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 16:59:07.685  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 16:59:07.710  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 16:59:07.711  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 16:59:07.735  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 16:59:07.774  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 16:59:07.948  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.905 seconds (JVM running for 5.613)
+2021-05-28 16:59:14.840  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 16:59:14.840  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 16:59:14.848  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-28 16:59:15.098  INFO Michael-DESKTOP --- [nio-9000-exec-1] c.a.w.s.UserServiceImpl                  : Invalid username/password with { Username: byebye Password: sefr }
+2021-05-28 17:01:29.012  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 23824 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 17:01:29.022  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 17:01:29.804  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 17:01:29.880  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 4 JPA repository interfaces.
+2021-05-28 17:01:30.616  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 17:01:30.625  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:01:30.625  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 17:01:30.625  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 17:01:30.755  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 17:01:30.755  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1690 ms
+2021-05-28 17:01:30.976  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 17:01:31.040  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 17:01:31.171  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 17:01:31.284  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 17:01:31.388  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 17:01:31.406  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 17:01:32.078  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 17:01:32.085  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 17:01:32.129  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 17:01:32.912  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 17:01:32.974  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aa57f646-cf73-44ff-b889-30fc9ce8ab2e
+
+2021-05-28 17:01:33.201  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-28 17:01:33.314  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 17:01:33.463  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:01:33.486  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 17:01:33.487  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 17:01:33.507  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 17:01:33.538  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 17:01:33.728  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.989 seconds (JVM running for 5.712)
+2021-05-28 17:01:53.034  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 17:01:53.035  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 17:01:53.042  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2021-05-28 17:01:53.263  INFO Michael-DESKTOP --- [nio-9000-exec-1] c.a.w.s.UserServiceImpl                  : Unsuccessful login with: { Username: by hello, Password: sefr }
+2021-05-28 17:06:27.816  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 10824 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 17:06:27.826  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 17:06:28.595  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 17:06:28.690  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86ms. Found 4 JPA repository interfaces.
+2021-05-28 17:06:29.429  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 17:06:29.437  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:06:29.437  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 17:06:29.438  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 17:06:29.568  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 17:06:29.568  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1700 ms
+2021-05-28 17:06:29.756  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 17:06:29.820  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 17:06:29.947  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 17:06:30.052  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 17:06:30.150  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 17:06:30.168  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 17:06:30.824  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 17:06:30.832  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 17:06:30.878  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 17:06:31.697  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 17:06:31.749  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 299871f6-8695-428a-b9c2-cc2d7a9d78fb
+
+2021-05-28 17:06:31.964  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-28 17:06:32.084  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 17:06:32.236  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:06:32.260  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 17:06:32.261  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 17:06:32.286  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 17:06:32.320  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 17:06:32.497  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.971 seconds (JVM running for 5.667)
+2021-05-28 17:07:33.435  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 17:07:33.435  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 17:07:33.443  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-28 17:07:33.780  INFO Michael-DESKTOP --- [nio-9000-exec-1] c.a.w.s.UserServiceImpl                  : Successful with: { Username: MH123, Password: password }
+2021-05-28 17:08:17.207  INFO Michael-DESKTOP --- [nio-9000-exec-6] c.a.w.s.UserServiceImpl                  : New user added with: { Username: Bob, Password: $2a$10$OyGOadv4l2bDQ1.Wdi82k.LhVCZWfgxP4QuUFVICKN1GNWKhbQ5lK }
+2021-05-28 17:15:26.194  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 10144 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 17:15:26.204  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 17:15:26.951  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 17:15:27.022  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 4 JPA repository interfaces.
+2021-05-28 17:15:27.725  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 17:15:27.733  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:15:27.733  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 17:15:27.733  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 17:15:27.861  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 17:15:27.861  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1619 ms
+2021-05-28 17:15:28.073  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 17:15:28.135  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 17:15:28.261  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 17:15:28.368  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 17:15:28.465  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 17:15:28.484  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 17:15:29.133  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 17:15:29.140  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 17:15:29.184  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 17:15:29.894  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 17:15:29.953  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 042d0f2f-6cad-459a-ba4a-2123ecb772fa
+
+2021-05-28 17:15:30.164  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-28 17:15:30.265  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 17:15:30.424  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:15:30.446  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 17:15:30.447  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 17:15:30.470  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 17:15:30.503  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 17:15:30.684  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.777 seconds (JVM running for 5.481)
+2021-05-28 17:15:56.634  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 17:15:56.634  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 17:15:56.644  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2021-05-28 17:15:57.000  INFO Michael-DESKTOP --- [nio-9000-exec-3] c.a.w.s.UserServiceImpl                  : New user created  with: Bobby Username: 
+2021-05-28 17:18:21.128  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 8812 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 17:18:21.136  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 17:18:21.903  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 17:18:21.978  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 4 JPA repository interfaces.
+2021-05-28 17:18:22.735  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 17:18:22.743  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:18:22.743  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 17:18:22.743  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 17:18:22.823  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 17:18:22.823  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1647 ms
+2021-05-28 17:18:23.054  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 17:18:23.114  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 17:18:23.240  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 17:18:23.345  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 17:18:23.445  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 17:18:23.463  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 17:18:24.109  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 17:18:24.117  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 17:18:24.171  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 17:18:24.931  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 17:18:24.984  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d4be3b20-8d10-4069-964d-c95c68a6e40b
+
+2021-05-28 17:18:25.071  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6774f264, org.springframework.security.web.context.SecurityContextPersistenceFilter@16d61071, org.springframework.security.web.header.HeaderWriterFilter@6b64429e, org.springframework.security.web.authentication.logout.LogoutFilter@163df259, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@779b4f9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aa59698, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2299f6d7, org.springframework.security.web.session.SessionManagementFilter@5be69f7e, org.springframework.security.web.access.ExceptionTranslationFilter@398694a6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@598e5cb8]
+2021-05-28 17:18:25.164  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 17:18:25.421  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:18:25.443  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 17:18:25.444  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 17:18:25.469  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 17:18:25.505  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 17:18:25.692  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.824 seconds (JVM running for 5.527)
+2021-05-28 17:18:33.595  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 17:18:33.595  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 17:18:33.603  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-28 17:18:33.864  INFO Michael-DESKTOP --- [nio-9000-exec-1] c.a.w.s.UserServiceImpl                  : Unsuccessful login with Username: wlkehlk Password: erg3wrwe
+2021-05-28 17:19:52.525  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 25236 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 17:19:52.536  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 17:19:53.286  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 17:19:53.359  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66ms. Found 4 JPA repository interfaces.
+2021-05-28 17:19:54.069  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 17:19:54.077  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:19:54.077  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 17:19:54.078  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 17:19:54.207  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 17:19:54.207  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1627 ms
+2021-05-28 17:19:54.398  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 17:19:54.453  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 17:19:54.588  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 17:19:54.696  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 17:19:54.794  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 17:19:54.812  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 17:19:55.452  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 17:19:55.459  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 17:19:55.514  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 17:19:56.228  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 17:19:56.287  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d7f7dd1b-80ea-49d6-832f-6c6c70c80d6e
+
+2021-05-28 17:19:56.491  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fa11fda, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cbbfe29, org.springframework.security.web.header.HeaderWriterFilter@294ebe11, org.springframework.security.web.authentication.logout.LogoutFilter@3639b04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3df04fa1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@779b4f9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24e1e90a, org.springframework.security.web.session.SessionManagementFilter@48aa0813, org.springframework.security.web.access.ExceptionTranslationFilter@76220ef1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b41b8bb]
+2021-05-28 17:19:56.584  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 17:19:56.734  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:19:56.756  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 17:19:56.757  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 17:19:56.779  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 17:19:56.813  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 17:19:56.985  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.742 seconds (JVM running for 5.447)
+2021-05-28 17:20:03.144  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 17:20:03.144  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 17:20:03.152  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-28 17:20:03.360  INFO Michael-DESKTOP --- [nio-9000-exec-1] c.a.w.s.UserServiceImpl                  : Unsuccessful login with: { Username: wlkehlk Password: erg3wrwe }
+2021-05-28 17:20:04.101  INFO Michael-DESKTOP --- [nio-9000-exec-2] c.a.w.s.UserServiceImpl                  : Unsuccessful login with: { Username: wlkehlk Password: erg3wrwe }
+2021-05-28 17:20:35.763  INFO Michael-DESKTOP --- [nio-9000-exec-3] c.a.w.s.UserServiceImpl                  : Successful with: { Username: MH123 }
+2021-05-28 17:21:30.366  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 5420 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-28 17:21:30.375  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-28 17:21:31.143  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-28 17:21:31.261  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 4 JPA repository interfaces.
+2021-05-28 17:21:32.079  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-28 17:21:32.087  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:21:32.087  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-28 17:21:32.088  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-28 17:21:32.175  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-28 17:21:32.176  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1760 ms
+2021-05-28 17:21:32.414  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-28 17:21:32.469  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-28 17:21:32.601  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-28 17:21:32.705  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-28 17:21:32.803  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-28 17:21:32.821  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-28 17:21:33.537  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-28 17:21:33.545  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-28 17:21:33.588  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-28 17:21:34.408  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-28 17:21:34.467  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 75fdb5b4-9332-46cd-8c46-a41832aee2bc
+
+2021-05-28 17:21:34.561  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2299f6d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@18692e80, org.springframework.security.web.header.HeaderWriterFilter@48aa0813, org.springframework.security.web.authentication.logout.LogoutFilter@405603b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31fe0ce5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cacb445, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cd701e4, org.springframework.security.web.session.SessionManagementFilter@64544ee4, org.springframework.security.web.access.ExceptionTranslationFilter@653e7b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@199806aa]
+2021-05-28 17:21:34.673  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 17:21:34.959  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-28 17:21:34.982  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-28 17:21:34.982  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-28 17:21:35.003  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-28 17:21:35.036  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-28 17:21:35.210  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 5.11 seconds (JVM running for 5.816)
+2021-05-28 17:21:52.001  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-28 17:21:52.001  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-28 17:21:52.010  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2021-05-28 17:21:52.422  INFO Michael-DESKTOP --- [nio-9000-exec-3] c.a.w.s.UserServiceImpl                  : New user created  with Username: wer }
+2021-05-28 17:39:04.616  INFO Michael-DESKTOP --- [nio-9000-exec-6] c.a.w.s.UserServiceImpl                  : Successful login with credentials: { Username: MH123 }
+2021-05-29 12:31:02.201  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 14092 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 12:31:02.210  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 12:31:03.065  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 12:31:03.146  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 4 JPA repository interfaces.
+2021-05-29 12:31:03.943  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 12:31:03.952  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:31:03.952  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 12:31:03.952  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 12:31:04.084  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 12:31:04.084  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1831 ms
+2021-05-29 12:31:04.296  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 12:31:04.374  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 12:31:04.556  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 12:31:04.692  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 12:31:04.813  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 12:31:04.837  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 12:31:05.628  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 12:31:05.637  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 12:31:05.693  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 12:31:06.448  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 12:31:06.516  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a5ad7457-7885-43e7-8d5e-53da0bf9b628
+
+2021-05-29 12:31:06.755  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d95166a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df04fa1, org.springframework.security.web.header.HeaderWriterFilter@2862271a, org.springframework.security.web.authentication.logout.LogoutFilter@2ca1e49a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdc2db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@178dc733, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b3db6e, org.springframework.security.web.session.SessionManagementFilter@6cbbfe29, org.springframework.security.web.access.ExceptionTranslationFilter@294ebe11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7538cfe6]
+2021-05-29 12:31:06.872  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 12:31:07.043  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:31:07.066  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 12:31:07.067  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 12:31:07.093  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 12:31:07.129  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 12:31:07.312  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 5.406 seconds (JVM running for 6.243)
+2021-05-29 12:31:32.776  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 7536 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 12:31:32.785  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 12:31:33.529  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 12:31:33.610  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 4 JPA repository interfaces.
+2021-05-29 12:31:34.352  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 12:31:34.360  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:31:34.361  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 12:31:34.361  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 12:31:34.492  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 12:31:34.493  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1668 ms
+2021-05-29 12:31:34.683  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 12:31:34.742  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 12:31:34.880  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 12:31:34.983  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 12:31:35.082  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 12:31:35.098  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 12:31:35.766  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 12:31:35.774  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 12:31:35.823  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 12:31:36.545  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 12:31:36.597  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d8987d88-4c41-40d5-9050-4558296bd1f4
+
+2021-05-29 12:31:36.803  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-29 12:31:36.916  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 12:31:37.065  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:31:37.091  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 12:31:37.091  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 12:31:37.116  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 12:31:37.156  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 12:31:37.316  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.803 seconds (JVM running for 5.523)
+2021-05-29 12:38:17.614  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 14388 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 12:38:17.623  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 12:38:18.346  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 12:38:18.422  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 4 JPA repository interfaces.
+2021-05-29 12:38:19.135  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 12:38:19.143  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:38:19.144  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 12:38:19.144  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 12:38:19.272  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 12:38:19.272  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1615 ms
+2021-05-29 12:38:19.464  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 12:38:19.528  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 12:38:19.680  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 12:38:19.801  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 12:38:19.900  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 12:38:19.916  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 12:38:20.584  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 12:38:20.591  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 12:38:20.628  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 12:38:21.344  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 12:38:21.398  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8da32da4-a99a-40ce-9afe-6c6a2bba67d3
+
+2021-05-29 12:38:21.610  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d95166a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df04fa1, org.springframework.security.web.header.HeaderWriterFilter@2862271a, org.springframework.security.web.authentication.logout.LogoutFilter@2ca1e49a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdc2db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@178dc733, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b3db6e, org.springframework.security.web.session.SessionManagementFilter@6cbbfe29, org.springframework.security.web.access.ExceptionTranslationFilter@294ebe11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7538cfe6]
+2021-05-29 12:38:21.710  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 12:38:21.865  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:38:21.885  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 12:38:21.886  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 12:38:21.913  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 12:38:21.949  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 12:38:22.126  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.779 seconds (JVM running for 5.51)
+2021-05-29 12:39:16.320  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-29 12:39:16.320  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-29 12:39:16.327  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2021-05-29 12:39:16.644  INFO Michael-DESKTOP --- [nio-9000-exec-2] c.a.w.s.UserServiceImpl                  : Successful login with credentials: { Username: MH123 } }
+2021-05-29 12:48:03.814  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 13848 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 12:48:03.822  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 12:48:04.555  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 12:48:04.627  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66ms. Found 4 JPA repository interfaces.
+2021-05-29 12:48:05.314  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 12:48:05.322  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:48:05.322  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 12:48:05.322  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 12:48:05.442  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 12:48:05.442  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1585 ms
+2021-05-29 12:48:05.637  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 12:48:05.689  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 12:48:05.831  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 12:48:05.930  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 12:48:06.024  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 12:48:06.041  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 12:48:06.675  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 12:48:06.682  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 12:48:06.728  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 12:48:07.422  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 12:48:07.484  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 55e55022-6501-4d30-9cdb-18a1403c0a72
+
+2021-05-29 12:48:07.675  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d95166a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df04fa1, org.springframework.security.web.header.HeaderWriterFilter@2862271a, org.springframework.security.web.authentication.logout.LogoutFilter@2ca1e49a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdc2db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@178dc733, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b3db6e, org.springframework.security.web.session.SessionManagementFilter@6cbbfe29, org.springframework.security.web.access.ExceptionTranslationFilter@294ebe11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7538cfe6]
+2021-05-29 12:48:07.772  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 12:48:07.900  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:48:07.925  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 12:48:07.926  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 12:48:07.946  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 12:48:07.978  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 12:48:08.145  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.59 seconds (JVM running for 5.314)
+2021-05-29 12:56:39.640  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 8384 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 12:56:39.648  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 12:56:40.383  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 12:56:40.460  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 4 JPA repository interfaces.
+2021-05-29 12:56:41.168  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 12:56:41.176  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:56:41.177  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 12:56:41.177  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 12:56:41.296  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 12:56:41.296  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1606 ms
+2021-05-29 12:56:41.481  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 12:56:41.533  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 12:56:41.664  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 12:56:41.766  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 12:56:41.858  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 12:56:41.875  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 12:56:42.519  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 12:56:42.527  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 12:56:42.566  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 12:56:43.258  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 12:56:43.314  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 74ff5cf3-72c2-42c4-ab85-e96bd9b31c59
+
+2021-05-29 12:56:43.529  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24e1e90a, org.springframework.security.web.context.SecurityContextPersistenceFilter@25823192, org.springframework.security.web.header.HeaderWriterFilter@4e51eda7, org.springframework.security.web.authentication.logout.LogoutFilter@5cb8580, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c25daad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fe0ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d95166a, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cadd4d4]
+2021-05-29 12:56:43.624  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 12:56:43.758  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 12:56:43.781  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 12:56:43.782  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 12:56:43.807  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 12:56:43.845  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 12:56:44.009  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.647 seconds (JVM running for 5.38)
+2021-05-29 13:17:26.618  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 20572 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 13:17:26.628  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 13:17:27.398  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 13:17:27.473  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 4 JPA repository interfaces.
+2021-05-29 13:17:28.208  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 13:17:28.215  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 13:17:28.216  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 13:17:28.216  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 13:17:28.341  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 13:17:28.341  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1671 ms
+2021-05-29 13:17:28.535  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 13:17:28.591  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 13:17:28.734  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 13:17:28.849  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 13:17:28.947  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 13:17:28.964  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 13:17:29.635  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 13:17:29.642  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 13:17:29.684  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 13:17:30.386  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 13:17:30.440  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d9806b76-e665-479c-bfea-269a6e689599
+
+2021-05-29 13:17:30.649  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d95166a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df04fa1, org.springframework.security.web.header.HeaderWriterFilter@2862271a, org.springframework.security.web.authentication.logout.LogoutFilter@2ca1e49a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdc2db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@178dc733, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b3db6e, org.springframework.security.web.session.SessionManagementFilter@6cbbfe29, org.springframework.security.web.access.ExceptionTranslationFilter@294ebe11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7538cfe6]
+2021-05-29 13:17:30.754  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 13:17:30.905  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 13:17:30.926  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 13:17:30.927  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 13:17:30.955  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 13:17:30.990  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 13:17:31.164  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.836 seconds (JVM running for 5.535)
+2021-05-29 13:26:27.815  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 21424 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 13:26:27.824  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 13:26:28.639  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 13:26:28.721  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 4 JPA repository interfaces.
+2021-05-29 13:26:29.467  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 13:26:29.475  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 13:26:29.475  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 13:26:29.476  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 13:26:29.602  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 13:26:29.602  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1741 ms
+2021-05-29 13:26:29.797  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 13:26:29.849  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 13:26:29.976  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 13:26:30.081  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 13:26:30.179  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 13:26:30.200  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 13:26:30.918  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 13:26:30.925  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 13:26:30.975  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 13:26:31.732  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 13:26:31.797  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 842dc1bb-0876-4c6d-9b66-d546238018a1
+
+2021-05-29 13:26:32.017  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d95166a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df04fa1, org.springframework.security.web.header.HeaderWriterFilter@2862271a, org.springframework.security.web.authentication.logout.LogoutFilter@2ca1e49a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdc2db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@178dc733, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b3db6e, org.springframework.security.web.session.SessionManagementFilter@6cbbfe29, org.springframework.security.web.access.ExceptionTranslationFilter@294ebe11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7538cfe6]
+2021-05-29 13:26:32.131  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 13:26:32.273  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 13:26:32.294  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 13:26:32.294  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 13:26:32.315  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 13:26:32.351  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 13:26:32.529  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 5.007 seconds (JVM running for 5.755)
+2021-05-29 13:29:54.182  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 17332 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-29 13:29:54.192  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-29 13:29:54.965  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 13:29:55.034  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 4 JPA repository interfaces.
+2021-05-29 13:29:55.700  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-29 13:29:55.707  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-29 13:29:55.707  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-29 13:29:55.708  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-29 13:29:55.795  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-29 13:29:55.795  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1565 ms
+2021-05-29 13:29:56.010  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 13:29:56.066  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 13:29:56.200  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 13:29:56.315  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 13:29:56.415  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 13:29:56.433  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 13:29:57.078  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 13:29:57.086  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 13:29:57.129  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 13:29:57.854  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 13:29:57.909  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 47b9b764-101f-4f94-a561-d1546d94d307
+
+2021-05-29 13:29:58.113  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d95166a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df04fa1, org.springframework.security.web.header.HeaderWriterFilter@2862271a, org.springframework.security.web.authentication.logout.LogoutFilter@2ca1e49a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdc2db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@178dc733, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b3db6e, org.springframework.security.web.session.SessionManagementFilter@6cbbfe29, org.springframework.security.web.access.ExceptionTranslationFilter@294ebe11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7538cfe6]
+2021-05-29 13:29:58.216  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 13:29:58.354  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-29 13:29:58.376  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-29 13:29:58.376  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 13:29:58.405  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 13:29:58.436  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 13:29:58.591  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 4.659 seconds (JVM running for 5.356)

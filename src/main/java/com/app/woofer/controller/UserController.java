@@ -46,8 +46,9 @@ public class UserController {
     @GetMapping("/{id}")
     public User getUserById(@PathVariable int id){
         User user = userService.getUserById(id);
-        logger.info("Searching for user with id: " + id);
+        //logger.info("Searching for user with id: {}", id);
         if (user == null) {
+            logger.info("User not found with id: { {}{}", id, " }");
             throw new WooferException("User not found");
         }
         return user;
@@ -67,10 +68,6 @@ public class UserController {
 
     @PostMapping("/login")
     public User login(@RequestBody User user){
-//        if (!userService.login(user)) {
-//            throw new WooferException("Invalid username/password");
-//        }
-
         return userService.login(user);
     }
 
