@@ -55,10 +55,10 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public boolean login(User user) {
+    public User login(User user) {
         User storedUser = userRepository.findByUsername(user.getUsername());
-        if (storedUser != null) {
-            return encoder.matches(user.getPassword(), storedUser.getPassword());
+        if (storedUser != null && (encoder.matches(user.getPassword(), storedUser.getPassword()))) {
+            return storedUser;
         } else {
             throw new WooferException("Invalid username/password");
         }
