@@ -1,7 +1,7 @@
 package com.app.woofer.service;
 
 
-import com.app.woofer.exceptions.WooferException;
+import com.app.woofer.exceptions.NotFoundException;
 import com.app.woofer.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -68,7 +68,7 @@ public class UserServiceImpl implements UserService{
             return storedUser;
         } else {
             logger.info("Unsuccessful login with credentials: { Username: {} Password: {} } ", user.getUsername(), user.getPassword());
-            throw new WooferException("Invalid username/password");
+            throw new NotFoundException("Invalid username/password");
         }
     }
 
