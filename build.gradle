@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.3.11.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'jacoco'
 }
 
 group = 'com.app'
@@ -42,6 +43,14 @@ dependencies {
 	compile('org.projectlombok:lombok')
 }
 
+jacocoTestReport {
+	reports {
+		xml.enabled true
+		csv.enabled true
+		html.enabled true
+	}
+}
 test {
 	useJUnitPlatform()
+	finalizedBy jacocoTestReport
 }
