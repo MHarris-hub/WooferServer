@@ -21,6 +21,7 @@ public class LikeController {
 
     @PostMapping("/like/{userId}/{postId}")
     public ResponseEntity<Integer> likePost(@PathVariable int userId, @PathVariable int postId){
+        System.out.println(userId+""+postId);
         return ResponseEntity.ok(likeService.likePost(userId, postId));
     }
 }

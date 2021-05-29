@@ -65,7 +65,7 @@ public class PostServiceImp implements PostService{
 
     @Override
     public List<Post> getAll() {
-        List<Post> ret = postRepository.findAll();//c=>{});
+        List<Post> ret = postRepository.findAll();
         for (Post i: ret) {
             i.getUser().setPassword(blankPass);
         }
