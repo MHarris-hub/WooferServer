@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -21,7 +22,7 @@ public class PostServiceImplTest {
     private PostRepository mockedRepo;
     private UserRepository mockedUserRepo;
 
-    Post generatePost(int seed) {return new Post(seed, new User(seed, seed+"", seed+"", seed+"", seed+"", seed+"", seed+""), null, seed, seed+"");}
+    Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"", seed+"", null), null, null, seed, seed+"");}
 
     @BeforeEach
     void setUp() {

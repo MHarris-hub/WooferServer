@@ -2,9 +2,11 @@ package com.app.woofer.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.List;
 
 @Entity
 @Table(name = "posts")
@@ -24,7 +26,15 @@ public class Post {
     @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private User user;
 
-    @Column(columnDefinition = "default CURRENT_TIMESTAMP")
+    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "Likes",
+            joinColumns = { @JoinColumn(name = "postId") },
+            inverseJoinColumns = { @JoinColumn(name = "userId") }
+    )
+    private List<User> likers;
+
+    @ColumnDefault("CURRENT_TIMESTAMP")
     private Instant timestamp;
     private int userID;
     private String body;

@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -79,6 +80,15 @@ public class PostServiceImpl implements PostService{
             i.getUser().setPassword(blankPass);
         }
         logger.info("All users retrieved");
+        return ret;
+    }
+
+    @Override
+    public List<Post> getByUsername(String username) {
+        List<Post> ret = postRepository.findByUserUsername(username);
+        for (Post i: ret) {
+            i.getUser().setPassword(blankPass);
+        }
         return ret;
     }
 }

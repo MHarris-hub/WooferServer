@@ -32,16 +32,17 @@ public class WooferConfiguration extends WebSecurityConfigurerAdapter{
 				.antMatchers("/user").permitAll()
 				.antMatchers("/post").permitAll()
 				.antMatchers("/posts").permitAll()
-
 				.antMatchers("/posts/*").permitAll()
-
+				.antMatchers("/posts/*/*").permitAll()
+				.antMatchers("/post/*").permitAll()
+				.antMatchers("/like/*/*").permitAll()
+				.antMatchers("/like/*").permitAll()
 				.antMatchers("/comment").permitAll()
 				.antMatchers("/follow/*").permitAll()
 				.antMatchers("/follow/*/*").permitAll()
 				.antMatchers("/follow").permitAll()
 				.antMatchers("/comment/user/*").permitAll()
 				.antMatchers("/comment/post/*").permitAll()
-				.antMatchers("/post/*").permitAll()
 				.anyRequest().authenticated();
 	}
 	@Bean

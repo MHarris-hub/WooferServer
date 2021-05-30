@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
 @CrossOrigin(origins = "http://localhost:4200") //angular running on port 5500
 @RestController
 public class PostController {
@@ -56,6 +55,10 @@ public class PostController {
             throw new NotFoundException("No posts found");
 
         return ResponseEntity.ok(ReturnPost.listConvert(postService.getByUserID(id)));
+
+    @GetMapping("/posts/user/{username}")
+    public ResponseEntity<List<ReturnPost>> getPostsByUser(@PathVariable String username){
+        return ResponseEntity.ok(ReturnPost.listConvert(postService.getByUsername(username)));
     }
 
     @GetMapping("/posts")

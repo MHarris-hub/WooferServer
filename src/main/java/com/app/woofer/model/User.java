@@ -3,8 +3,12 @@ package com.app.woofer.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.time.Instant;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -20,12 +24,22 @@ public class User {
         this.id = id;
     }
 
+    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "Likes",
+            joinColumns = { @JoinColumn(name = "userId") },
+            inverseJoinColumns = { @JoinColumn(name = "postId") }
+    )
+    private List<Post> likedPosts;
+
 
     private String username;
     private String password;
     private String name;
     private String email;
-    private String dob;
-    @Column(length = 10)
-    private String phone;
+
+    @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "timestamp")
+    private Date timestamp;
 }
