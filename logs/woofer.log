@@ -34,3 +34,38 @@ Using generated security password: 065cf7e0-e906-411e-ba0a-58d9d9108424
 2021-05-28 15:49:54.549  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2021-05-28 15:49:54.575  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 24 ms
 2021-05-28 15:49:54.943  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-30 10:46:49.144  INFO DESKTOP-D58CC64 --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on DESKTOP-D58CC64 with PID 20860 (F:\Revature\woofer-server\build\classes\java\main started by mikez in F:\Revature\woofer-server)
+2021-05-30 10:46:49.156  INFO DESKTOP-D58CC64 --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 10:46:50.153  INFO DESKTOP-D58CC64 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 10:46:50.251  INFO DESKTOP-D58CC64 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 5 JPA repository interfaces.
+2021-05-30 10:46:51.011  INFO DESKTOP-D58CC64 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 10:46:51.023  INFO DESKTOP-D58CC64 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 10:46:51.023  INFO DESKTOP-D58CC64 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 10:46:51.024  INFO DESKTOP-D58CC64 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 10:46:51.182  INFO DESKTOP-D58CC64 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 10:46:51.183  INFO DESKTOP-D58CC64 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1974 ms
+2021-05-30 10:46:51.421  INFO DESKTOP-D58CC64 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 10:46:51.500  INFO DESKTOP-D58CC64 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 10:46:51.696  INFO DESKTOP-D58CC64 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 10:46:51.840  INFO DESKTOP-D58CC64 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 10:46:52.130  INFO DESKTOP-D58CC64 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 10:46:52.155  INFO DESKTOP-D58CC64 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 10:46:53.331  INFO DESKTOP-D58CC64 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 10:46:53.339  INFO DESKTOP-D58CC64 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 10:46:53.388  WARN DESKTOP-D58CC64 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 10:46:54.210  INFO DESKTOP-D58CC64 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 10:46:54.268  INFO DESKTOP-D58CC64 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e649b67f-e033-4193-a4f6-697000e8516a
+
+2021-05-30 10:46:54.357  INFO DESKTOP-D58CC64 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d741200, org.springframework.security.web.context.SecurityContextPersistenceFilter@7aad7df5, org.springframework.security.web.header.HeaderWriterFilter@64710a6, org.springframework.security.web.authentication.logout.LogoutFilter@380e470a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69cc3370, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d732cda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36e11b60, org.springframework.security.web.session.SessionManagementFilter@2446597e, org.springframework.security.web.access.ExceptionTranslationFilter@12bb8943, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69862a1]
+2021-05-30 10:46:54.492  INFO DESKTOP-D58CC64 --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 10:46:54.646  INFO DESKTOP-D58CC64 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-30 10:46:54.670  INFO DESKTOP-D58CC64 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-30 10:46:54.673  INFO DESKTOP-D58CC64 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 10:46:54.696  INFO DESKTOP-D58CC64 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 10:46:54.728  INFO DESKTOP-D58CC64 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 10:46:54.922  INFO DESKTOP-D58CC64 --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 6.114 seconds (JVM running for 7.17)
+2021-05-30 11:06:49.377  INFO DESKTOP-D58CC64 --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 11:06:49.377  INFO DESKTOP-D58CC64 --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-30 11:06:49.387  INFO DESKTOP-D58CC64 --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
