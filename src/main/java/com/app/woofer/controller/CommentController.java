@@ -14,12 +14,10 @@ import java.util.List;
 public class CommentController {
 
     private final CommentService commentService;
-    private final User user;
 
     @Autowired
-    public CommentController(CommentService commentService, User user){
+    public CommentController(CommentService commentService){
         this.commentService = commentService;
-        this.user = user;
     }
 
     @PostMapping("/comment")
