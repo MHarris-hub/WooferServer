@@ -6,6 +6,7 @@ import com.app.woofer.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -66,6 +67,15 @@ public class PostServiceImp implements PostService{
     @Override
     public List<Post> getAll() {
         List<Post> ret = postRepository.findAll();
+        for (Post i: ret) {
+            i.getUser().setPassword(blankPass);
+        }
+        return ret;
+    }
+
+    @Override
+    public List<Post> getByUsername(String username) {
+        List<Post> ret = postRepository.findByUserUsername(username);
         for (Post i: ret) {
             i.getUser().setPassword(blankPass);
         }

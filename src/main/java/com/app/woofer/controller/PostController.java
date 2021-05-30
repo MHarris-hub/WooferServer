@@ -45,9 +45,9 @@ public class PostController {
         return ResponseEntity.ok(new ReturnPost(postService.getPost(id)));
     }
 
-    @GetMapping("/posts/user/{id}")
-    public ResponseEntity<List<ReturnPost>> getPostsByUser(@PathVariable int id){
-        return ResponseEntity.ok(ReturnPost.listConvert(postService.getByUserID(id)));
+    @GetMapping("/posts/user/{username}")
+    public ResponseEntity<List<ReturnPost>> getPostsByUser(@PathVariable String username){
+        return ResponseEntity.ok(ReturnPost.listConvert(postService.getByUsername(username)));
     }
 
     @GetMapping("/posts")
