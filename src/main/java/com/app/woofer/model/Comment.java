@@ -2,6 +2,7 @@ package com.app.woofer.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.time.Instant;
@@ -22,7 +23,7 @@ public class Comment {
     @ManyToOne
     @JoinColumn(name = "postId", referencedColumnName = "id")
     private Post post;
-    @Column(columnDefinition = "default CURRENT_TIMESTAMP")
+    @ColumnDefault("CURRENT_TIMESTAMP")
     private Instant timestamp;
     private String body;
 }

@@ -9,6 +9,7 @@ import com.app.woofer.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,5 +38,13 @@ public class LikeServiceImp implements LikeService {
             return likes;
         }
         return likes + 1;
+    }
+
+    @Override
+    public List<Integer> likedPosts(int userId) {
+        List<Integer> ret = new ArrayList<>();
+        List<Likes> find = likesRepository.findByUserId(userId);
+        for(Likes like: find) ret.add(like.getPostId());
+        return ret;
     }
 }
