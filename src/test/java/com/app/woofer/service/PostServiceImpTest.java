@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.core.parameters.P;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -22,7 +23,7 @@ public class PostServiceImpTest {
     private PostRepository mockedRepo;
     private UserRepository mockedUserRepo;
 
-    Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"", seed+"", seed+"", seed+""), null, null, seed, seed+"");}
+    Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"", seed+"", null), null, null, seed, seed+"");}
 
     @BeforeEach
     void setUp() {
