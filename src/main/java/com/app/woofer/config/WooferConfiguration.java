@@ -27,6 +27,7 @@ public class WooferConfiguration extends WebSecurityConfigurerAdapter{
 	public void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
 				.antMatchers("/user/*").permitAll()
+				.antMatchers("/user/*/*").permitAll()
 				.antMatchers("/login").permitAll()
 				.antMatchers("/user").permitAll()
 				.antMatchers("/post").permitAll()

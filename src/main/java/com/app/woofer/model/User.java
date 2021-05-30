@@ -3,8 +3,11 @@ package com.app.woofer.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.time.Instant;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -34,7 +37,9 @@ public class User {
     private String password;
     private String name;
     private String email;
-    private String dob;
-    @Column(length = 10)
-    private String phone;
+
+    @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "timestamp")
+    private Date timestamp;
 }

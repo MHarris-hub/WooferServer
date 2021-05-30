@@ -1,5 +1,6 @@
 package com.app.woofer.controller;
 
+import com.app.woofer.exceptions.WooferException;
 import com.app.woofer.model.Follow;
 import com.app.woofer.service.FollowService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,10 @@ public class FollowController {
     }
     @DeleteMapping("/follow")
     public void unfollow(@RequestBody Follow follow){
+
+        if(follow == null){
+            throw new WooferException("no null values");
+        }
         followService.unfollow(follow);
     }
 

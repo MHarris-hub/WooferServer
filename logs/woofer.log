@@ -34,3 +34,858 @@ Using generated security password: 065cf7e0-e906-411e-ba0a-58d9d9108424
 2021-05-28 15:49:54.549  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2021-05-28 15:49:54.575  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 24 ms
 2021-05-28 15:49:54.943  INFO DESKTOP-D58CC64 --- [nio-9000-exec-2] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-29 18:48:21.748  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-29 18:48:21.785  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-29 18:48:21.788  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-29 18:48:22.115  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-29 18:48:22.419  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-29 18:48:22.487  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37e9fe1d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3f9be823, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7290762, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@426b167f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3a8a1139, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ab02cbb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@15ed2298, org.springframework.test.context.event.EventPublishingTestExecutionListener@f2f16b4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@65c6cdb1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3ec8f046, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@424dece5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@35a0c8ae, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@66d820ee, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1febb6b3]
+2021-05-29 18:48:23.257  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 25152 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-29 18:48:23.270  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-29 18:48:26.365  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 18:48:26.667  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 271ms. Found 5 JPA repository interfaces.
+2021-05-29 18:48:28.806  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 18:48:29.005  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 18:48:29.568  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 18:48:30.215  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 18:48:34.201  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 18:48:34.282  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 18:48:39.299  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 18:48:39.339  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 18:48:39.544  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 18:48:43.263  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 18:48:43.568  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 977c8a59-6871-4f6f-8c8d-fe5de29c3bcd
+
+2021-05-29 18:48:44.190  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@673e1069, org.springframework.security.web.context.SecurityContextPersistenceFilter@394a0a0e, org.springframework.security.web.header.HeaderWriterFilter@539d2c5, org.springframework.security.web.authentication.logout.LogoutFilter@7ecb4afe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@153de319, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@508af1f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63aa9f56, org.springframework.security.web.session.SessionManagementFilter@21319af, org.springframework.security.web.access.ExceptionTranslationFilter@51e2f898, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61403c28]
+2021-05-29 18:48:45.333  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 18:48:46.344  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 18:48:46.456  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 18:48:46.596  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 18:48:47.286  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 24.686 seconds (JVM running for 32.394)
+2021-05-29 18:48:47.409  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-29 18:48:47.426  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 18:48:47.434  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-29 18:48:47.480  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-29 19:18:54.903  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-29 19:18:54.945  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-29 19:18:54.948  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-29 19:18:55.313  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-29 19:18:55.799  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-29 19:18:55.879  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@59e607ba, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@ead5be0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3a50381c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e661f82, org.springframework.test.context.support.DirtiesContextTestExecutionListener@57540423, org.springframework.test.context.transaction.TransactionalTestExecutionListener@33c22772, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8e979ce, org.springframework.test.context.event.EventPublishingTestExecutionListener@6fded5e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@717f94be, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5324d454, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1040e0f7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@79be78bc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@74e9d951, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@19a25ec]
+2021-05-29 19:18:56.880  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 10532 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-29 19:18:56.893  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-29 19:19:00.440  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 19:19:00.872  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 399ms. Found 5 JPA repository interfaces.
+2021-05-29 19:19:03.487  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 19:19:03.722  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-29 19:19:04.293  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 19:19:04.802  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-29 19:19:06.969  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-29 19:19:07.059  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-29 19:19:12.099  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 19:19:12.160  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 19:19:12.472  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 19:19:17.467  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-29 19:19:17.833  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a34e69a5-3010-4828-a8c9-cdb430c4ae6b
+
+2021-05-29 19:19:18.501  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a53cc90, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a6e322f, org.springframework.security.web.header.HeaderWriterFilter@27fd75af, org.springframework.security.web.authentication.logout.LogoutFilter@38b1e8e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c5a7422, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c39133d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bfe2f28, org.springframework.security.web.session.SessionManagementFilter@63a6da5a, org.springframework.security.web.access.ExceptionTranslationFilter@6bcd9d3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7436d0a5]
+2021-05-29 19:19:19.681  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 19:19:20.841  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-29 19:19:20.986  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-29 19:19:21.239  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-29 19:19:22.383  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 26.358 seconds (JVM running for 34.112)
+2021-05-29 19:19:22.567  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-29 19:19:22.590  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 19:19:22.599  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-29 19:19:22.640  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 11:10:01.485  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-30 11:10:01.524  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-30 11:10:01.528  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-30 11:10:01.919  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-30 11:10:02.283  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-30 11:10:02.365  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@60d03980, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@74873494, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d03e67c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5ba549ba, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3a587777, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7736c73c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55a4ffa0, org.springframework.test.context.event.EventPublishingTestExecutionListener@24bd9437, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5da7bc18, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c698fb7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ec22a65, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@261607a6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@46b13800, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@16f50356]
+2021-05-30 11:10:03.195  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 23080 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 11:10:03.220  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-30 11:10:07.097  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 11:10:07.429  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 306ms. Found 5 JPA repository interfaces.
+2021-05-30 11:10:10.560  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 11:10:10.858  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 11:10:11.482  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 11:10:11.998  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 11:10:14.490  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 11:10:14.592  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 11:10:19.491  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 11:10:19.524  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:10:19.734  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 11:10:23.257  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 11:10:23.561  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a29ab3d9-0a1e-4ae5-8aff-495be003398b
+
+2021-05-30 11:10:24.171  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e5d0d65, org.springframework.security.web.context.SecurityContextPersistenceFilter@552de7fd, org.springframework.security.web.header.HeaderWriterFilter@54d23246, org.springframework.security.web.authentication.logout.LogoutFilter@2230e173, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74e7e5f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7193a114, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fbbb462, org.springframework.security.web.session.SessionManagementFilter@7b506386, org.springframework.security.web.access.ExceptionTranslationFilter@44adb385, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@233c4600]
+2021-05-30 11:10:25.333  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:10:26.322  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 11:10:26.456  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 11:10:26.600  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 11:10:27.267  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 24.756 seconds (JVM running for 33.572)
+2021-05-30 11:10:27.406  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:10:27.423  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:10:27.431  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-30 11:10:27.478  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 11:23:10.632  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-30 11:23:43.132  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-30 11:23:43.572  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-30 11:23:43.587  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-30 11:23:43.591  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-30 11:23:43.983  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-30 11:23:44.299  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-30 11:23:44.357  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@75295594, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8bdb3fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5e589d27, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5b1fd80c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6425b30e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e2f61a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b49f2a4, org.springframework.test.context.event.EventPublishingTestExecutionListener@3eb38679, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7747ef62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@618385b6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@358b87f0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@17295f76, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5fdd8e0e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@220e1e76]
+2021-05-30 11:23:45.174  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 21220 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 11:23:45.186  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-30 11:23:48.291  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 11:23:48.578  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 261ms. Found 5 JPA repository interfaces.
+2021-05-30 11:23:50.818  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 11:23:51.050  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 11:23:51.600  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 11:23:52.130  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 11:23:54.558  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 11:23:54.645  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 11:24:00.071  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 11:24:00.108  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:24:00.344  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 11:24:04.203  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 11:24:04.514  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ea8e879d-9c7a-48c1-a8fc-4d081969c658
+
+2021-05-30 11:24:05.166  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@abb1850, org.springframework.security.web.context.SecurityContextPersistenceFilter@47124512, org.springframework.security.web.header.HeaderWriterFilter@552de7fd, org.springframework.security.web.authentication.logout.LogoutFilter@151727a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a994d28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a1147f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17b2123e, org.springframework.security.web.session.SessionManagementFilter@2668b004, org.springframework.security.web.access.ExceptionTranslationFilter@4f36749c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a1fcdf6]
+2021-05-30 11:24:06.393  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:24:07.477  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 11:24:07.595  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 11:24:07.802  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 11:24:08.700  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 24.246 seconds (JVM running for 32.703)
+2021-05-30 11:24:08.852  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:24:08.869  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:24:08.879  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-30 11:24:08.923  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 11:25:07.460  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-30 11:25:07.879  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-30 11:25:07.890  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-30 11:25:07.892  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-30 11:25:08.267  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-30 11:25:08.600  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-30 11:25:08.669  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@732fa0a1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d34acf9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@71febb7d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@41419f27, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4f651506, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7fe2b77, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3df4da6, org.springframework.test.context.event.EventPublishingTestExecutionListener@4e2a425d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2980b3bb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f53906f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2698445e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3a3cc27a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@168db3ed, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@551e99bb]
+2021-05-30 11:25:09.467  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 22720 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 11:25:09.480  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-30 11:25:12.661  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 11:25:12.934  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 247ms. Found 5 JPA repository interfaces.
+2021-05-30 11:25:15.124  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 11:25:15.386  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 11:25:15.996  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 11:25:16.539  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 11:25:19.101  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 11:25:19.186  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 11:25:24.380  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 11:25:24.422  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:25:24.718  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 11:25:28.485  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 11:25:28.782  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b0352e40-d081-4048-9a6e-97d3b075bb35
+
+2021-05-30 11:25:29.404  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@445490cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@17ff3863, org.springframework.security.web.header.HeaderWriterFilter@6cfd966f, org.springframework.security.web.authentication.logout.LogoutFilter@4cbbc922, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c7f4f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64a51436, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@305c4fde, org.springframework.security.web.session.SessionManagementFilter@21deb586, org.springframework.security.web.access.ExceptionTranslationFilter@3d1aa745, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4277e2b9]
+2021-05-30 11:25:30.529  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:25:31.505  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 11:25:31.627  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 11:25:31.763  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 11:25:32.489  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 23.711 seconds (JVM running for 31.666)
+2021-05-30 11:25:32.631  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:25:32.641  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:25:32.648  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-30 11:25:32.685  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 11:49:17.953  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-30 11:49:18.381  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-30 11:49:18.394  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-30 11:49:18.397  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-30 11:49:18.740  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-30 11:49:19.031  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-30 11:49:19.090  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a6331f1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@429f62c8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b9e0b48, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@73d8f7a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1057bc97, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29e70577, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@52589f48, org.springframework.test.context.event.EventPublishingTestExecutionListener@66093770, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b979c22, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5acaf49a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4c7e8254, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63638e1c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@146268de, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@190130ec]
+2021-05-30 11:49:19.775  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 11092 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 11:49:19.787  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-30 11:49:22.840  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 11:49:23.116  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 246ms. Found 5 JPA repository interfaces.
+2021-05-30 11:49:25.188  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 11:49:25.385  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 11:49:25.888  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 11:49:26.328  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 11:49:28.594  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 11:49:28.679  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 11:49:33.460  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 11:49:33.491  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:49:33.678  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 11:49:37.049  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 11:49:37.322  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1211bab9-9092-47b4-8bfd-6d70a16ee0ff
+
+2021-05-30 11:49:37.898  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@306c2ee1, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d487714, org.springframework.security.web.header.HeaderWriterFilter@36fd7f57, org.springframework.security.web.authentication.logout.LogoutFilter@7f2498fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2888a11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59918651, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c188938, org.springframework.security.web.session.SessionManagementFilter@44832901, org.springframework.security.web.access.ExceptionTranslationFilter@3c7f4f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29687134]
+2021-05-30 11:49:38.943  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:49:39.892  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 11:49:39.979  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 11:49:40.095  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 11:49:40.775  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 21.586 seconds (JVM running for 29.074)
+2021-05-30 11:49:40.906  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-30 11:49:40.916  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 11:49:40.922  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-30 11:49:40.967  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 12:11:06.123  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on DESKTOP-6BHH6BK with PID 28356 (C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server\build\classes\java\main started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 12:11:06.135  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 12:11:07.483  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 12:11:07.656  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 5 JPA repository interfaces.
+2021-05-30 12:11:09.035  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 12:11:09.051  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 12:11:09.051  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 12:11:09.053  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 12:11:09.348  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 12:11:09.348  INFO DESKTOP-6BHH6BK --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3141 ms
+2021-05-30 12:11:09.773  INFO DESKTOP-6BHH6BK --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 12:11:09.913  INFO DESKTOP-6BHH6BK --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 12:11:10.327  INFO DESKTOP-6BHH6BK --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 12:11:10.674  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 12:11:12.150  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 12:11:12.204  INFO DESKTOP-6BHH6BK --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 12:11:15.409  INFO DESKTOP-6BHH6BK --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 12:11:15.426  INFO DESKTOP-6BHH6BK --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 12:11:15.538  WARN DESKTOP-6BHH6BK --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 12:11:17.391  INFO DESKTOP-6BHH6BK --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 12:11:17.501  INFO DESKTOP-6BHH6BK --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 52c6372e-2551-414a-8f51-75c890148449
+
+2021-05-30 12:11:17.687  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@771d4db, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a47bc9c, org.springframework.security.web.header.HeaderWriterFilter@642c5bb3, org.springframework.security.web.authentication.logout.LogoutFilter@983050b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12404f9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c0680b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d88c1bf, org.springframework.security.web.session.SessionManagementFilter@5f8df69, org.springframework.security.web.access.ExceptionTranslationFilter@6df87ffd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69372c1e]
+2021-05-30 12:11:17.884  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 12:11:18.170  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-30 12:11:18.202  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-30 12:11:18.203  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 12:11:18.249  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 12:11:18.323  INFO DESKTOP-6BHH6BK --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 12:11:18.662  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 12.988 seconds (JVM running for 14.329)
+2021-05-30 12:14:54.710  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 12:14:54.710  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-30 12:14:54.717  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2021-05-30 12:16:43.665  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on DESKTOP-6BHH6BK with PID 27048 (C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server\build\classes\java\main started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 12:16:43.675  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 12:16:44.714  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 12:16:44.818  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95ms. Found 5 JPA repository interfaces.
+2021-05-30 12:16:45.838  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 12:16:45.848  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 12:16:45.849  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 12:16:45.849  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 12:16:46.030  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 12:16:46.031  INFO DESKTOP-6BHH6BK --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2299 ms
+2021-05-30 12:16:46.292  INFO DESKTOP-6BHH6BK --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 12:16:46.382  INFO DESKTOP-6BHH6BK --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 12:16:46.615  INFO DESKTOP-6BHH6BK --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 12:16:46.794  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 12:16:48.382  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 12:16:48.405  INFO DESKTOP-6BHH6BK --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 12:16:50.910  INFO DESKTOP-6BHH6BK --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 12:16:50.925  INFO DESKTOP-6BHH6BK --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 12:16:50.976  WARN DESKTOP-6BHH6BK --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 12:16:52.112  INFO DESKTOP-6BHH6BK --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 12:16:52.201  INFO DESKTOP-6BHH6BK --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3b00cc73-adb6-4d5f-95f9-3fa39fce9888
+
+2021-05-30 12:16:52.347  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d88c1bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a47bc9c, org.springframework.security.web.header.HeaderWriterFilter@642c5bb3, org.springframework.security.web.authentication.logout.LogoutFilter@983050b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12404f9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c0680b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3636f2a7, org.springframework.security.web.session.SessionManagementFilter@5f8df69, org.springframework.security.web.access.ExceptionTranslationFilter@6df87ffd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24842b8e]
+2021-05-30 12:16:52.484  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 12:16:52.690  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-30 12:16:52.718  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-30 12:16:52.720  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 12:16:52.753  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 12:16:52.799  INFO DESKTOP-6BHH6BK --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 12:16:53.074  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 9.812 seconds (JVM running for 10.837)
+2021-05-30 12:16:56.877  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 12:16:56.878  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-30 12:16:56.890  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 12 ms
+2021-05-30 13:11:23.764  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-30 13:11:24.197  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-30 13:11:24.211  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-30 13:11:24.214  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-30 13:11:24.582  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-30 13:11:24.905  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-30 13:11:24.991  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5abf0959, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24a9c3e6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@27d8e66d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@77bd82d8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@556ab8b7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f36f70f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5fbd850a, org.springframework.test.context.event.EventPublishingTestExecutionListener@448d7767, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4422d041, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4ca4d945, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7f02900e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@501be6c6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2e9945c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@68ed0bb5]
+2021-05-30 13:11:25.701  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 22304 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 13:11:25.711  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-30 13:11:28.640  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 13:11:28.924  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 256ms. Found 5 JPA repository interfaces.
+2021-05-30 13:11:30.957  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 13:11:31.170  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 13:11:31.691  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 13:11:32.147  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 13:11:34.434  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 13:11:34.507  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 13:11:39.230  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 13:11:39.265  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 13:11:39.491  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 13:11:42.992  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 13:11:43.279  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 37a712ff-3208-443e-ae2e-4c8471907406
+
+2021-05-30 13:11:43.919  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ff3f0aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@643fb059, org.springframework.security.web.header.HeaderWriterFilter@23e391e4, org.springframework.security.web.authentication.logout.LogoutFilter@3f6b6e3b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1699110f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@412a1e61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a0ee917, org.springframework.security.web.session.SessionManagementFilter@e2ebc7e, org.springframework.security.web.access.ExceptionTranslationFilter@64c0ca9e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12820a7d]
+2021-05-30 13:11:44.908  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 13:11:45.903  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 13:11:46.013  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 13:11:46.157  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 13:11:47.341  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 22.24 seconds (JVM running for 29.705)
+2021-05-30 13:11:47.525  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-30 13:11:47.549  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 13:11:47.566  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-30 13:11:47.623  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 13:15:39.593  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on DESKTOP-6BHH6BK with PID 26064 (C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server\build\classes\java\main started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 13:15:39.621  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 13:15:42.668  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 13:15:42.944  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 245ms. Found 5 JPA repository interfaces.
+2021-05-30 13:15:45.537  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 13:15:45.565  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 13:15:45.566  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 13:15:45.567  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 13:15:45.980  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 13:15:45.980  INFO DESKTOP-6BHH6BK --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6100 ms
+2021-05-30 13:15:46.585  INFO DESKTOP-6BHH6BK --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 13:15:46.775  INFO DESKTOP-6BHH6BK --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 13:15:47.266  INFO DESKTOP-6BHH6BK --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 13:15:47.639  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 13:15:50.042  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 13:15:50.098  INFO DESKTOP-6BHH6BK --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 13:15:54.161  INFO DESKTOP-6BHH6BK --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 13:15:54.191  INFO DESKTOP-6BHH6BK --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 13:15:54.341  WARN DESKTOP-6BHH6BK --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 13:15:57.003  INFO DESKTOP-6BHH6BK --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 13:15:57.187  INFO DESKTOP-6BHH6BK --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f08bfb98-ed5f-4a35-b1b1-566cf6976104
+
+2021-05-30 13:15:57.483  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1edac3b4, org.springframework.security.web.context.SecurityContextPersistenceFilter@37c37d67, org.springframework.security.web.header.HeaderWriterFilter@7a021f49, org.springframework.security.web.authentication.logout.LogoutFilter@4c164f81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1013871e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4604e051, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7641ed02, org.springframework.security.web.session.SessionManagementFilter@669580e2, org.springframework.security.web.access.ExceptionTranslationFilter@26888c31, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b8b4846]
+2021-05-30 13:15:57.773  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 13:15:58.225  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-30 13:15:58.305  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-30 13:15:58.308  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 13:15:58.380  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 13:15:58.485  INFO DESKTOP-6BHH6BK --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 13:15:59.090  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 20.537 seconds (JVM running for 23.601)
+2021-05-30 13:18:30.737  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 13:18:30.737  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-30 13:18:30.756  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 19 ms
+2021-05-30 14:08:57.365  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.c.UserController                   : Searching for user with id: 2
+2021-05-30 14:08:57.569  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.app.woofer.WooferServerApplicationTests], using SpringBootContextLoader
+2021-05-30 14:08:57.574  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.app.woofer.WooferServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-05-30 14:08:57.575  INFO DESKTOP-6BHH6BK --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.app.woofer.WooferServerApplicationTests]: WooferServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-05-30 14:08:57.718  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.app.woofer.WooferServerApplication for test class com.app.woofer.WooferServerApplicationTests
+2021-05-30 14:08:57.868  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-05-30 14:08:57.903  INFO DESKTOP-6BHH6BK --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5ba354fc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@351f6b4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4f4b9ede, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2065022b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61a0a66f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6dc818b9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7e66d6b0, org.springframework.test.context.event.EventPublishingTestExecutionListener@769ae70d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@126da46f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3fcd7b4b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@77d6e954, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56d5ca2c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@29e44245, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d276311]
+2021-05-30 14:08:58.219  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Starting WooferServerApplicationTests on DESKTOP-6BHH6BK with PID 17544 (started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 14:08:58.223  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : No active profile set, falling back to default profiles: default
+2021-05-30 14:08:59.648  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 14:08:59.773  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 5 JPA repository interfaces.
+2021-05-30 14:09:00.786  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 14:09:00.888  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 14:09:01.153  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 14:09:01.393  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 14:09:03.005  INFO DESKTOP-6BHH6BK --- [    Test worker] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 14:09:03.048  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 14:09:05.370  WARN DESKTOP-6BHH6BK --- [    Test worker] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table users 
+       add column timestamp default CURRENT_TIMESTAMP" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table users 
+       add column timestamp default CURRENT_TIMESTAMP" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:580)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "default"
+  Position: 55
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 122 more
+2021-05-30 14:09:06.981  INFO DESKTOP-6BHH6BK --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 14:09:06.997  INFO DESKTOP-6BHH6BK --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 14:09:07.102  WARN DESKTOP-6BHH6BK --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 14:09:08.798  INFO DESKTOP-6BHH6BK --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 14:09:08.920  INFO DESKTOP-6BHH6BK --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 59ccaa95-38ec-4c45-b330-ec3f58ec8374
+
+2021-05-30 14:09:09.168  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6159b564, org.springframework.security.web.context.SecurityContextPersistenceFilter@7364c038, org.springframework.security.web.header.HeaderWriterFilter@5913a715, org.springframework.security.web.authentication.logout.LogoutFilter@4b139515, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d580ad2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a0ee917, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@af50892, org.springframework.security.web.session.SessionManagementFilter@525a84dc, org.springframework.security.web.access.ExceptionTranslationFilter@55212f52, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@915c727]
+2021-05-30 14:09:09.644  INFO DESKTOP-6BHH6BK --- [    Test worker] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 14:09:10.087  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 14:09:10.134  INFO DESKTOP-6BHH6BK --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 14:09:10.212  INFO DESKTOP-6BHH6BK --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 14:09:10.560  INFO DESKTOP-6BHH6BK --- [    Test worker] c.a.w.WooferServerApplicationTests       : Started WooferServerApplicationTests in 12.61 seconds (JVM running for 16.196)
+2021-05-30 14:09:10.637  INFO DESKTOP-6BHH6BK --- [extShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-30 14:09:10.642  INFO DESKTOP-6BHH6BK --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 14:09:10.645  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-30 14:09:10.663  INFO DESKTOP-6BHH6BK --- [extShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 14:34:37.590  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on DESKTOP-6BHH6BK with PID 28108 (C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server\build\classes\java\main started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 14:34:37.602  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 14:34:38.781  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 14:34:38.894  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 5 JPA repository interfaces.
+2021-05-30 14:34:39.882  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 14:34:39.893  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 14:34:39.894  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 14:34:39.894  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 14:34:40.068  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 14:34:40.068  INFO DESKTOP-6BHH6BK --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2416 ms
+2021-05-30 14:34:40.313  INFO DESKTOP-6BHH6BK --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 14:34:40.393  INFO DESKTOP-6BHH6BK --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 14:34:40.600  INFO DESKTOP-6BHH6BK --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 14:34:40.842  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 14:34:42.188  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 14:34:42.219  INFO DESKTOP-6BHH6BK --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 14:34:43.722  WARN DESKTOP-6BHH6BK --- [           main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table users 
+       add column timestamp default CURRENT_TIMESTAMP" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table users 
+       add column timestamp default CURRENT_TIMESTAMP" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:580)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.app.woofer.WooferServerApplication.main(WooferServerApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "default"
+  Position: 55
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 35 more
+2021-05-30 14:34:44.759  INFO DESKTOP-6BHH6BK --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 14:34:44.769  INFO DESKTOP-6BHH6BK --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 14:34:44.826  WARN DESKTOP-6BHH6BK --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 14:34:45.929  INFO DESKTOP-6BHH6BK --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 14:34:46.000  INFO DESKTOP-6BHH6BK --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c8dc8634-a30a-4e4f-921a-c45f31e9f983
+
+2021-05-30 14:34:46.121  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@771d4db, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ce6a9bd, org.springframework.security.web.header.HeaderWriterFilter@c1f0c7b, org.springframework.security.web.authentication.logout.LogoutFilter@17189618, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5100c143, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ba63110, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d88c1bf, org.springframework.security.web.session.SessionManagementFilter@515940af, org.springframework.security.web.access.ExceptionTranslationFilter@23e86863, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69372c1e]
+2021-05-30 14:34:46.242  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 14:34:46.484  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-30 14:34:46.527  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-30 14:34:46.528  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 14:34:46.571  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 14:34:46.633  INFO DESKTOP-6BHH6BK --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 14:34:46.952  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 9.735 seconds (JVM running for 10.711)
+2021-05-30 14:41:16.070  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 14:41:16.070  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-30 14:41:16.094  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 23 ms
+2021-05-30 14:41:16.895  WARN DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.h.e.j.s.SqlExceptionHelper             : SQL Error: 0, SQLState: 42703
+2021-05-30 14:41:16.896 ERROR DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.h.e.j.s.SqlExceptionHelper             : ERROR: column user0_.timestamp does not exist
+  Position: 114
+2021-05-30 14:41:16.917 ERROR DESKTOP-6BHH6BK --- [nio-9000-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet] with root cause
+org.postgresql.util.PSQLException: ERROR: column user0_.timestamp does not exist
+  Position: 114
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:114)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2303)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2056)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2018)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:948)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2849)
+	at org.hibernate.loader.Loader.doList(Loader.java:2831)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2663)
+	at org.hibernate.loader.Loader.list(Loader.java:2658)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1652)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:196)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor$QueryMethodInvoker.invoke(QueryExecutorMethodInterceptor.java:195)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:152)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy115.findByUsername(Unknown Source)
+	at com.app.woofer.service.UserServiceImpl.getByUsername(UserServiceImpl.java:49)
+	at com.app.woofer.controller.UserController.getUserByUsername(UserController.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-30 14:44:27.470  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on DESKTOP-6BHH6BK with PID 2492 (C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server\build\classes\java\main started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 14:44:27.496  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 14:44:30.150  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 14:44:30.413  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 240ms. Found 5 JPA repository interfaces.
+2021-05-30 14:44:32.891  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 14:44:32.920  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 14:44:32.922  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 14:44:32.923  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 14:44:33.358  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 14:44:33.358  INFO DESKTOP-6BHH6BK --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5734 ms
+2021-05-30 14:44:33.927  INFO DESKTOP-6BHH6BK --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 14:44:34.122  INFO DESKTOP-6BHH6BK --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 14:44:34.661  INFO DESKTOP-6BHH6BK --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 14:44:35.050  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 14:44:37.474  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 14:44:37.527  INFO DESKTOP-6BHH6BK --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 14:44:38.595 ERROR DESKTOP-6BHH6BK --- [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.app.woofer.model.User.timestamp
+2021-05-30 14:44:38.596  WARN DESKTOP-6BHH6BK --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.app.woofer.model.User.timestamp
+2021-05-30 14:44:38.596  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-05-30 14:44:39.122  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2021-05-30 14:44:39.131  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2021-05-30 14:44:39.164  INFO DESKTOP-6BHH6BK --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-30 14:44:39.214 ERROR DESKTOP-6BHH6BK --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.app.woofer.model.User.timestamp
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.app.woofer.WooferServerApplication.main(WooferServerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.app.woofer.model.User.timestamp
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:188)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:185)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:205)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2299)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:979)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:806)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1858)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1795)
+	... 17 more
+2021-05-30 14:45:07.662  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on DESKTOP-6BHH6BK with PID 11164 (C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server\build\classes\java\main started by aleja in C:\Users\aleja\OneDrive\Desktop\Woofer2021Alejandro\woofer-server)
+2021-05-30 14:45:07.691  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 14:45:10.411  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 14:45:10.684  INFO DESKTOP-6BHH6BK --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 250ms. Found 5 JPA repository interfaces.
+2021-05-30 14:45:13.211  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 14:45:13.244  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 14:45:13.246  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 14:45:13.246  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 14:45:13.684  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 14:45:13.685  INFO DESKTOP-6BHH6BK --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5870 ms
+2021-05-30 14:45:14.239  INFO DESKTOP-6BHH6BK --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 14:45:14.433  INFO DESKTOP-6BHH6BK --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 14:45:14.965  INFO DESKTOP-6BHH6BK --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 14:45:15.352  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 14:45:17.795  INFO DESKTOP-6BHH6BK --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 14:45:17.859  INFO DESKTOP-6BHH6BK --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 14:45:21.960  INFO DESKTOP-6BHH6BK --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 14:45:21.984  INFO DESKTOP-6BHH6BK --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 14:45:22.130  WARN DESKTOP-6BHH6BK --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 14:45:24.640  INFO DESKTOP-6BHH6BK --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 14:45:24.805  INFO DESKTOP-6BHH6BK --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a059e46f-c41e-42ca-87c1-caa398b41900
+
+2021-05-30 14:45:25.091  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20be793a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d15789f, org.springframework.security.web.header.HeaderWriterFilter@5f5923ef, org.springframework.security.web.authentication.logout.LogoutFilter@4db568e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6684589a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cf5d999, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a4cb8ae, org.springframework.security.web.session.SessionManagementFilter@1f547af8, org.springframework.security.web.access.ExceptionTranslationFilter@7c840fe3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7cec3975]
+2021-05-30 14:45:25.346  INFO DESKTOP-6BHH6BK --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 14:45:25.755  INFO DESKTOP-6BHH6BK --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-30 14:45:25.814  INFO DESKTOP-6BHH6BK --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-30 14:45:25.817  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 14:45:25.886  INFO DESKTOP-6BHH6BK --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 14:45:25.992  INFO DESKTOP-6BHH6BK --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 14:45:26.518  INFO DESKTOP-6BHH6BK --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 19.809 seconds (JVM running for 22.618)
+2021-05-30 14:45:38.851  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 14:45:38.852  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-30 14:45:38.874  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 22 ms
