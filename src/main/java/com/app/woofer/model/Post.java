@@ -28,7 +28,7 @@ public class Post {
     @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private User user;
 
-    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER)
     @JoinTable(
             name = "Likes",
             joinColumns = { @JoinColumn(name = "postId") },
