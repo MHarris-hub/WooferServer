@@ -42,20 +42,7 @@ public class FollowServiceImpl implements  FollowService{
     }
 
     @Override
-    public List<Follow> getFollowerByUserId(int id) {
-        return followRepository.findByUser_Id(id);
-    }
-
-    @Override
-    public void unfollow(Follow follow) {
-
-        List<Follow> foundUserId = followRepository.findByUser_Id(follow.getUser().getId());
-        List<Follow> foundFollowerId = followRepository.findByFollower_Id(follow.getFollower().getId());
-
-        for(Follow follower : foundUserId){
-            if(foundFollowerId.contains(follower)){
-                followRepository.deleteById(follower.getId());
-            }
-        }
+    public void unfollow(int followId) {
+           followRepository.deleteById(followId);
     }
 }
