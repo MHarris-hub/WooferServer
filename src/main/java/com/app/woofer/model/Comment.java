@@ -20,7 +20,7 @@ public class Comment {
     @JoinColumn(name = "userId", referencedColumnName = "id")
     private User user;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "postId", referencedColumnName = "id")
     private Post post;
     @ColumnDefault("CURRENT_TIMESTAMP")
