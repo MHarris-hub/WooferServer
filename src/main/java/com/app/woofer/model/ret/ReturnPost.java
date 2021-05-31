@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -16,7 +17,7 @@ public class ReturnPost {
     private int userId;
     private int likes;
     private int comments;
-    private Instant timestamp;
+    private Date timestamp;
 
     public ReturnPost() {
     }
