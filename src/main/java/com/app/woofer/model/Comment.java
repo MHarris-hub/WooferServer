@@ -3,9 +3,11 @@ package com.app.woofer.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.Date;
 
 @Entity
 @Table(name = "comments")
@@ -23,7 +25,9 @@ public class Comment {
     @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "postId", referencedColumnName = "id")
     private Post post;
-    @ColumnDefault("CURRENT_TIMESTAMP")
-    private Instant timestamp;
+    @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "timestamp")
+    private Date timestamp;
     private String body;
 }

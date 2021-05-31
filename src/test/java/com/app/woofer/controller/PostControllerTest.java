@@ -20,7 +20,7 @@ public class PostControllerTest {
     private PostService mockPostService;
     private PostController testSubject;
 
-    Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"", seed+"", null), null, null, seed, seed+"");}
+    Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"",  null), null, null, seed, seed+"");}
 
     @BeforeEach
     void setUp() {
