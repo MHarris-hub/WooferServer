@@ -67,7 +67,9 @@ public class UserController {
 
     @PostMapping("/login")
     public User login(@RequestBody User user){
-        return userService.login(user);
+        User ret = userService.login(user);
+        System.out.println(ret);
+        return ret;
     }
 
     //DELETE requests

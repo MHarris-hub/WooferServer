@@ -11,6 +11,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
+@RequestMapping("comment")
 public class CommentController {
 
     private final CommentService commentService;
@@ -20,19 +21,19 @@ public class CommentController {
         this.commentService = commentService;
     }
 
-    @PostMapping("/comment")
+    @PostMapping
     public ResponseEntity<Comment> addComment(@RequestBody Comment comment){
         return ResponseEntity.ok(commentService.addComment(comment));
     }
-    @GetMapping("/comment")
+    @GetMapping
     public ResponseEntity<List<Comment>> getAllComments(){
         return ResponseEntity.ok(commentService.getAllComments());
     }
-    @GetMapping("/comment/user/{id}")
+    @GetMapping("/user/{id}")
     public ResponseEntity<List<Comment>> getCommentByUser(@PathVariable int id){
         return ResponseEntity.ok(commentService.getCommentByUser(id));
     }
-    @GetMapping("/comment/post/{id}")
+    @GetMapping("/post/{id}")
     public ResponseEntity<List<Comment>> getCommentByPost(@PathVariable int id){
         return ResponseEntity.ok(commentService.getCommentByPost(id));
     }
