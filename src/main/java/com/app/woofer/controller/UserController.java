@@ -3,6 +3,7 @@ package com.app.woofer.controller;
 import java.util.List;
 
 import com.app.woofer.exceptions.NotFoundException;
+import com.app.woofer.exceptions.WooferException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

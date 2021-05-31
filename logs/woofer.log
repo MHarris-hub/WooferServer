@@ -3582,3 +3582,162 @@ Using generated security password: a059e46f-c41e-42ca-87c1-caa398b41900
 2021-05-30 14:45:38.852  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2021-05-30 14:45:38.874  INFO DESKTOP-6BHH6BK --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 22 ms
 >>>>>>> upstream/main
+2021-05-30 20:03:23.711  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 14340 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-30 20:03:23.719  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-30 20:03:24.459  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-30 20:03:24.540  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 5 JPA repository interfaces.
+2021-05-30 20:03:25.262  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-30 20:03:25.270  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-30 20:03:25.270  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-30 20:03:25.270  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 20:03:25.404  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-30 20:03:25.404  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1647 ms
+2021-05-30 20:03:25.597  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-30 20:03:25.670  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-30 20:03:25.838  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-30 20:03:25.964  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-30 20:03:26.846  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-30 20:03:26.874  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-30 20:03:28.564  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-30 20:03:28.573  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-30 20:03:28.619  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-30 20:03:29.512  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-30 20:03:29.563  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 10b32b5b-8127-4f4d-92ee-f7ccde4cca94
+
+2021-05-30 20:03:29.647  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37c74e4e, org.springframework.security.web.context.SecurityContextPersistenceFilter@aa23f11, org.springframework.security.web.header.HeaderWriterFilter@29592929, org.springframework.security.web.authentication.logout.LogoutFilter@50734cea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79e90571, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ac25dbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@128a188a, org.springframework.security.web.session.SessionManagementFilter@303fbc4, org.springframework.security.web.access.ExceptionTranslationFilter@656c5818, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13f2d42c]
+2021-05-30 20:03:29.755  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-30 20:03:29.921  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-30 20:03:29.951  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-30 20:03:29.952  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-30 20:03:29.986  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-30 20:03:30.019  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-30 20:03:30.179  INFO Michael-DESKTOP --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPostsByUserUsingGET_1
+2021-05-30 20:03:30.215  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 6.799 seconds (JVM running for 7.515)
+2021-05-30 20:07:30.208  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 20:07:30.208  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-30 20:07:30.216  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2021-05-30 20:07:30.549  INFO Michael-DESKTOP --- [nio-9000-exec-2] c.a.w.s.UserServiceImpl                  : Unsuccessful login with credentials: { Username: MH123 Password: password } 
+2021-05-30 20:07:36.253  INFO Michael-DESKTOP --- [nio-9000-exec-3] c.a.w.s.UserServiceImpl                  : Unsuccessful login with credentials: { Username: MH123 Password: password } 
+2021-05-31 11:59:24.739  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Starting WooferServerApplication on Michael-DESKTOP with PID 5824 (C:\Users\Michael\IdeaProjects\WooferServer\build\classes\java\main started by Michael in C:\Users\Michael\IdeaProjects\WooferServer)
+2021-05-31 11:59:24.748  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : No active profile set, falling back to default profiles: default
+2021-05-31 11:59:25.568  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-31 11:59:25.652  INFO Michael-DESKTOP --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 5 JPA repository interfaces.
+2021-05-31 11:59:26.428  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9000 (http)
+2021-05-31 11:59:26.439  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9000"]
+2021-05-31 11:59:26.439  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-05-31 11:59:26.439  INFO Michael-DESKTOP --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-31 11:59:26.582  INFO Michael-DESKTOP --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-05-31 11:59:26.582  INFO Michael-DESKTOP --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1793 ms
+2021-05-31 11:59:26.793  INFO Michael-DESKTOP --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-31 11:59:26.864  INFO Michael-DESKTOP --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-31 11:59:27.045  INFO Michael-DESKTOP --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-31 11:59:27.172  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-05-31 11:59:28.035  INFO Michael-DESKTOP --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-05-31 11:59:28.060  INFO Michael-DESKTOP --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-31 11:59:29.745  INFO Michael-DESKTOP --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-31 11:59:29.755  INFO Michael-DESKTOP --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-31 11:59:29.807  WARN Michael-DESKTOP --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-31 11:59:30.730  INFO Michael-DESKTOP --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-31 11:59:30.790  INFO Michael-DESKTOP --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: edf79f68-7ba0-48f7-94b6-17e3600ad6a0
+
+2021-05-31 11:59:30.900  INFO Michael-DESKTOP --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37c74e4e, org.springframework.security.web.context.SecurityContextPersistenceFilter@aa23f11, org.springframework.security.web.header.HeaderWriterFilter@29592929, org.springframework.security.web.authentication.logout.LogoutFilter@50734cea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79e90571, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ac25dbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@128a188a, org.springframework.security.web.session.SessionManagementFilter@303fbc4, org.springframework.security.web.access.ExceptionTranslationFilter@656c5818, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13f2d42c]
+2021-05-31 11:59:30.999  INFO Michael-DESKTOP --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-31 11:59:31.167  INFO Michael-DESKTOP --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9000"]
+2021-05-31 11:59:31.193  INFO Michael-DESKTOP --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9000 (http) with context path ''
+2021-05-31 11:59:31.194  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-31 11:59:31.220  INFO Michael-DESKTOP --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-31 11:59:31.253  INFO Michael-DESKTOP --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-31 11:59:31.419  INFO Michael-DESKTOP --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPostsByUserUsingGET_1
+2021-05-31 11:59:31.455  INFO Michael-DESKTOP --- [           main] c.a.w.WooferServerApplication            : Started WooferServerApplication in 7.05 seconds (JVM running for 7.946)
+2021-05-31 12:00:32.320  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-31 12:00:32.320  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-05-31 12:00:32.331  INFO Michael-DESKTOP --- [nio-9000-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 11 ms
+2021-05-31 12:00:32.791  INFO Michael-DESKTOP --- [nio-9000-exec-4] c.a.w.s.UserServiceImpl                  : New user created with { Username: MH123 }
+2021-05-31 12:00:39.689  INFO Michael-DESKTOP --- [nio-9000-exec-6] c.a.w.s.UserServiceImpl                  : Successful login with credentials: { Username: MH123 }
+2021-05-31 12:00:39.759 ERROR Michael-DESKTOP --- [nio-9000-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/posts/user/MH123': {public org.springframework.http.ResponseEntity com.app.woofer.controller.PostController.getPostsByUser(java.lang.String), public org.springframework.http.ResponseEntity com.app.woofer.controller.PostController.getPostsByUser(int)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/posts/user/MH123': {public org.springframework.http.ResponseEntity com.app.woofer.controller.PostController.getPostsByUser(java.lang.String), public org.springframework.http.ResponseEntity com.app.woofer.controller.PostController.getPostsByUser(int)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:413)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:396)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-31 12:00:39.825  INFO Michael-DESKTOP --- [io-9000-exec-10] c.a.w.s.FollowServiceImpl                : Followers retrieved for User with { ID: 28 }
+2021-05-31 12:00:39.825  INFO Michael-DESKTOP --- [nio-9000-exec-9] c.a.w.s.FollowServiceImpl                : Followers retrieved for User with { ID: 28 }
+2021-05-31 12:00:39.862  INFO Michael-DESKTOP --- [nio-9000-exec-9] c.a.w.s.FollowServiceImpl                : All followers retrieved for user with { ID: 28 }
+2021-05-31 12:00:39.895  INFO Michael-DESKTOP --- [io-9000-exec-10] c.a.w.s.FollowServiceImpl                : Followers retrieved with follow id { ID: 28 }
