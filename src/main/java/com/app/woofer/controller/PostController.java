@@ -1,5 +1,6 @@
 package com.app.woofer.controller;
 
+import com.app.woofer.exceptions.NotFoundException;
 import com.app.woofer.model.ret.ReturnPost;
 import com.app.woofer.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,20 @@ public class PostController {
 
     @GetMapping("/post/{id}")
     public ResponseEntity<ReturnPost> getPost(@PathVariable int id){
+        if (postService.getPost(id) == null) {
+            throw new NotFoundException("No posts found");
+        }
+
         return ResponseEntity.ok(new ReturnPost(postService.getPost(id)));
+    }
+
+    @GetMapping("/posts/user/{id}")
+    public ResponseEntity<List<ReturnPost>> getPostsByUser(@PathVariable int id) {
+        if (postService.getByUserID(id).isEmpty()) {
+            throw new NotFoundException("No posts found");
+        }
+
+        return ResponseEntity.ok(ReturnPost.listConvert(postService.getByUserID(id)));
     }
 
     @GetMapping("/posts/user/{username}")
@@ -52,6 +66,9 @@ public class PostController {
 
     @GetMapping("/posts")
     public ResponseEntity<List<ReturnPost>> getAllPosts(){
+        if (postService.getAll().isEmpty())
+            throw new NotFoundException("No posts found");
+
         return ResponseEntity.ok(ReturnPost.listConvert(postService.getAll()));
     }
 }

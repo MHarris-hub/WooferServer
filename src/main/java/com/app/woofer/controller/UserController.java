@@ -2,6 +2,7 @@ package com.app.woofer.controller;
 
 import java.util.List;
 
+import com.app.woofer.exceptions.NotFoundException;
 import com.app.woofer.exceptions.WooferException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -46,9 +47,10 @@ public class UserController {
     @GetMapping("/{id}")
     public User getUserById(@PathVariable int id){
         User user = userService.getUserById(id);
-        logger.info("Searching for user with id: " + id);
+        //logger.info("Searching for user with id: {}", id);
         if (user == null) {
-            throw new WooferException("User not found");
+            logger.info("User not found with id: { {} }", id);
+            throw new NotFoundException("User not found");
         }
         return user;
     }
@@ -75,9 +77,11 @@ public class UserController {
     //DELETE requests
     @DeleteMapping("/delete/{id}")
     public void removeUser(@PathVariable int id) {
+
         if(id <= 0){
             throw new WooferException("no negative id in database");
         }
+
         userService.removeUser(id);
     }
 }
