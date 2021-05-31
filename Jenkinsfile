@@ -23,7 +23,7 @@ node{
     stage("Deploy app"){
         sshagent(['Docker_Dev_Server_SSH']) {
             sh "ssh -o StrictHostKeyChecking=no ec2-user@172.31.40.4 docker rm -f project1container || true"
-            sh "ssh -o StrictHostKeyChecking=no ec2-user@172.31.40.4 docker run -dp 9000:9000 --name project1container alejandrooro99/project1:${buildNum}"
+            sh "ssh -o StrictHostKeyChecking=no ec2-user@172.31.40.4 docker run -t -dp 9000:9000 --name project1container alejandrooro99/project1:${buildNum}"
         }
         
     }
