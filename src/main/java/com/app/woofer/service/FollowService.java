@@ -8,6 +8,5 @@ public interface FollowService {
     int getAllFollowers(int userId);
     Follow addFollower(Follow follow);
     List<Follow> getFollowerByFollowId(int id);
-    List<Follow> getFollowerByUserId(int id);
-    void unfollow(Follow follow);
+    void unfollow(int followId);
 }

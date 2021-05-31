@@ -50,6 +50,10 @@ public class FollowServiceImpl implements  FollowService{
     }
 
     @Override
+<<<<<<< HEAD
+    public void unfollow(int followId) {
+           followRepository.deleteById(followId);
+=======
     public List<Follow> getFollowerByUserId(int id) {
         logger.info("Followers retrieved for User with { ID: {} }", id);
         return followRepository.findByUser_Id(id);
@@ -67,5 +71,6 @@ public class FollowServiceImpl implements  FollowService{
             }
         }
         logger.info("Follower with { ID: {} } has unfollowed User with { ID: {} }", follow.getFollower().getId(), follow.getUser().getId());
+>>>>>>> upstream/main
     }
 }

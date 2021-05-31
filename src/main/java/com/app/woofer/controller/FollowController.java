@@ -37,6 +37,8 @@ public class FollowController {
 
         return ResponseEntity.ok(followService.getFollowerByFollowId(followerId));
     }
+<<<<<<< HEAD
+=======
 
     @GetMapping("/follow/user/{userId}")
     public ResponseEntity<List<Follow>> getFollowersByUserId(@PathVariable int userId){
@@ -46,6 +48,7 @@ public class FollowController {
         return ResponseEntity.ok(followService.getFollowerByUserId(userId));
     }
 
+>>>>>>> upstream/main
     @PostMapping("/follow")
     public ResponseEntity<Follow> Follow(@RequestBody Follow follow){
         if (follow.getUser().getUsername() == null)
@@ -53,6 +56,11 @@ public class FollowController {
 
         return ResponseEntity.ok(followService.addFollower(follow));
     }
+<<<<<<< HEAD
+    @DeleteMapping("/follow/{followId}")
+    public void unfollow(@PathVariable int followId){
+        followService.unfollow(followId);
+=======
 
     @DeleteMapping("/follow")
     public void unfollow(@RequestBody Follow follow){
@@ -61,6 +69,7 @@ public class FollowController {
             throw new WooferException("no null values");
         }
         followService.unfollow(follow);
+>>>>>>> upstream/main
     }
 
 }
