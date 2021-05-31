@@ -22,7 +22,7 @@ public class Comment {
     @JoinColumn(name = "userId", referencedColumnName = "id")
     private User user;
 
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     @JoinColumn(name = "postId", referencedColumnName = "id")
     private Post post;
     @CreationTimestamp

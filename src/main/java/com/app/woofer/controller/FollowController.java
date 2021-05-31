@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "http://jenkins-testhfsga.s3-website-us-east-1.amazonaws.com/", "https://d3s4rsfy4toz8y.cloudfront.net/"})
 public class FollowController {
 
     private final FollowService followService;
@@ -36,9 +36,6 @@ public class FollowController {
 
     @PostMapping("/follow")
     public ResponseEntity<Follow> Follow(@RequestBody Follow follow) {
-        if (follow.getUser().getUsername() == null)
-            throw new NotFoundException("Could not follow user");
-
         return ResponseEntity.ok(followService.addFollower(follow));
     }
 

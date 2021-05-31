@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "http://jenkins-testhfsga.s3-website-us-east-1.amazonaws.com/", "https://d3s4rsfy4toz8y.cloudfront.net/"})
 @RestController
+@RequestMapping("comment")
 public class CommentController {
 
     private final CommentService commentService;
@@ -21,31 +22,23 @@ public class CommentController {
         this.commentService = commentService;
     }
 
-    @PostMapping("/comment")
+    @PostMapping
     public ResponseEntity<Comment> addComment(@RequestBody Comment comment){
         return ResponseEntity.ok(commentService.addComment(comment));
     }
-    @GetMapping("/comment")
-    public ResponseEntity<List<Comment>> getAllComments(){
-        if (commentService.getAllComments().isEmpty())
-            throw new NotFoundException("No comments found");
 
+    @GetMapping
+    public ResponseEntity<List<Comment>> getAllComments(){
         return ResponseEntity.ok(commentService.getAllComments());
     }
 
-    @GetMapping("/comment/user/{id}")
+    @GetMapping("user/{id}")
     public ResponseEntity<List<Comment>> getCommentByUser(@PathVariable int id){
-        if (commentService.getCommentByUser(id).isEmpty())
-            throw new NotFoundException("No comments found");
-
         return ResponseEntity.ok(commentService.getCommentByUser(id));
     }
 
-    @GetMapping("/comment/post/{id}")
+    @GetMapping("post/{id}")
     public ResponseEntity<List<Comment>> getCommentByPost(@PathVariable int id){
-        if (commentService.getCommentByPost(id).isEmpty())
-            throw new NotFoundException("No comments found");
-
         return ResponseEntity.ok(commentService.getCommentByPost(id));
     }
 }
