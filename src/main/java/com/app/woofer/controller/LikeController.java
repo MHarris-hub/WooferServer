@@ -23,6 +23,11 @@ public class LikeController {
         return ResponseEntity.ok(likeService.likePost(userId, postId));
     }
 
+    @DeleteMapping("/like/{userId}/{postId}")
+    public ResponseEntity<Integer> unLikePost(@PathVariable int userId, @PathVariable int postId){
+        return ResponseEntity.ok(likeService.unLikePost(userId, postId));
+    }
+
     @GetMapping("/like/{userId}")
     public ResponseEntity<List<Integer>> getLikedPosts(@PathVariable int userId){
         return ResponseEntity.ok(likeService.likedPosts(userId));
