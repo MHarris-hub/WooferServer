@@ -1,6 +1,7 @@
 package com.app.woofer.service;
 
-import com.app.woofer.exceptions.WooferException;
+
+import com.app.woofer.exceptions.NotFoundException;
 import com.app.woofer.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,12 +11,15 @@ import com.app.woofer.repository.UserRepository;
 
 import java.util.List;
 import java.util.Optional;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Service
 public class UserServiceImpl implements UserService{
 
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder encoder;
+    private static final Logger logger = LogManager.getLogger(UserServiceImpl.class);
 
     @Autowired
     public UserServiceImpl(UserRepository userRepository, BCryptPasswordEncoder encoder){
@@ -26,11 +30,13 @@ public class UserServiceImpl implements UserService{
     public User addUser(User user) {
         String encodedPassword = encoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
+        logger.info("New user created with { Username: {} }", user.getUsername());
         return userRepository.save(user);
     }
 
     @Override
     public User updateUser(User user) {
+        logger.info("User updated with { ID: {} }", user.getId());
         return userRepository.save(user);
     }
 
@@ -58,9 +64,11 @@ public class UserServiceImpl implements UserService{
     public User login(User user) {
         User storedUser = userRepository.findByUsername(user.getUsername());
         if (storedUser != null && (encoder.matches(user.getPassword(), storedUser.getPassword()))) {
+            logger.info("Successful login with credentials: { Username: {} }", user.getUsername());
             return storedUser;
         } else {
-            throw new WooferException("Invalid username/password");
+            logger.info("Unsuccessful login with credentials: { Username: {} Password: {} } ", user.getUsername(), user.getPassword());
+            throw new NotFoundException("Invalid username/password");
         }
     }
 
