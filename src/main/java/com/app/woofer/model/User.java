@@ -24,13 +24,13 @@ public class User {
         this.id = id;
     }
 
-    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.LAZY)
-    @JoinTable(
-            name = "Likes",
-            joinColumns = { @JoinColumn(name = "userId") },
-            inverseJoinColumns = { @JoinColumn(name = "postId") }
-    )
-    private List<Post> likedPosts;
+//    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.LAZY)
+//    @JoinTable(
+//            name = "Likes",
+//            joinColumns = { @JoinColumn(name = "userId") },
+//            inverseJoinColumns = { @JoinColumn(name = "postId") }
+//    )
+//    private List<Post> likedPosts;
 
 
     private String username;
@@ -42,4 +42,16 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "timestamp")
     private Date timestamp;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", timestamp=" + timestamp +
+                '}';
+    }
 }
