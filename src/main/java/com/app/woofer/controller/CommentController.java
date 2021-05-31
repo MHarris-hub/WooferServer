@@ -25,7 +25,6 @@ public class CommentController {
     public ResponseEntity<Comment> addComment(@RequestBody Comment comment){
         return ResponseEntity.ok(commentService.addComment(comment));
     }
-
     @GetMapping("/comment")
     public ResponseEntity<List<Comment>> getAllComments(){
         if (commentService.getAllComments().isEmpty())
