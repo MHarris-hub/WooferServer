@@ -38,14 +38,14 @@ public class UserServiceImplTest {
             userService.login(null);
         });
     }
-    @Test
-    void loginTest2(){
-
-        when(bcrypt.matches(anyString(),anyString())).thenReturn(false);
-        Assertions.assertThrows(WooferException.class,()->{
-            userService.login(new User(1));
-        });
-    }
+//    @Test
+//    void loginTest2(){
+//
+//        when(bcrypt.matches(anyString(),anyString())).thenReturn(false);
+//        Assertions.assertThrows(WooferException.class,()->{
+//            userService.login(new User(1));
+//        });
+//    }
     @Test
     void addUserTest(){
         User user = new User(1);
