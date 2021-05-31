@@ -7,7 +7,6 @@ import com.app.woofer.repository.UserRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.security.core.parameters.P;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -17,19 +16,19 @@ import java.util.Optional;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
-public class PostServiceImpTest {
+public class PostServiceImplTest {
 
     private PostService testSubject;
     private PostRepository mockedRepo;
     private UserRepository mockedUserRepo;
 
-    Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"", seed+"", null), null, null, seed, seed+"");}
+    Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"", null), null, null, seed, seed+"");}
 
     @BeforeEach
     void setUp() {
         mockedRepo = mock(PostRepository.class);
         mockedUserRepo = mock(UserRepository.class);
-        testSubject = new PostServiceImp(mockedRepo, mockedUserRepo);
+        testSubject = new PostServiceImpl(mockedRepo, mockedUserRepo);
     }
 
     @Test

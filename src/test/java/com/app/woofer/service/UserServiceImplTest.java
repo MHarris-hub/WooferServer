@@ -22,6 +22,7 @@ public class UserServiceImplTest {
     private UserRepository userRepository;
     private UserService userService;
     private BCryptPasswordEncoder bcrypt;
+    private Object Optional;
 
     @BeforeEach
     void first(){
@@ -87,8 +88,8 @@ public class UserServiceImplTest {
         Assertions.assertTrue(userService.getUsersByName("ale") == userList);
     }
     @Test
-    void removeUserTest(){
-
+    void getUserIdTest(){
+        //when(Optional<User> userOptional = userRepository.findById(id));
     }
     @Test
     void updateUserTest(){

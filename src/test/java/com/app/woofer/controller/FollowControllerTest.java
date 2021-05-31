@@ -32,18 +32,5 @@ public class FollowControllerTest {
         when(followService.getFollowerByFollowId(anyInt())).thenReturn(null);
         Assertions.assertFalse(followController.getFollowersByFollowId(5) == null);
     }
-    @Test
-    void getByUserId(){
-        when(followService.getFollowerByUserId(anyInt())).thenReturn(null);
-        Assertions.assertTrue(followController.getFollowersByUserId(5) != null);
-    }
-    @Test
-    void unfollowTest(){
-        Follow follower = new Follow();
-        follower.setFollower(null);
-        follower.setId(1);
-        follower.setUser(null);
-        doNothing().when(followService).unfollow(null);
-        Assertions.assertThrows(WooferException.class,()->{followController.unfollow(null);});
-    }
+
 }

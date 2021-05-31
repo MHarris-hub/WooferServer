@@ -3,9 +3,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -26,7 +28,7 @@ public class Post {
     @JoinColumn(name = "userID", referencedColumnName = "id", updatable = false, insertable = false)
     private User user;
 
-    @ManyToMany(cascade = { CascadeType.ALL }, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.DETACH, fetch = FetchType.EAGER)
     @JoinTable(
             name = "Likes",
             joinColumns = { @JoinColumn(name = "postId") },
@@ -34,8 +36,10 @@ public class Post {
     )
     private List<User> likers;
 
-    @ColumnDefault("CURRENT_TIMESTAMP")
-    private Instant timestamp;
+    @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "timestamp")
+    private Date timestamp;
     private int userID;
     private String body;
 

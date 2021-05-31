@@ -1,5 +1,6 @@
 package com.app.woofer.controller;
 
+import com.app.woofer.exceptions.NotFoundException;
 import com.app.woofer.model.Comment;
 import com.app.woofer.model.User;
 import com.app.woofer.service.CommentService;
@@ -25,17 +26,28 @@ public class CommentController {
     public ResponseEntity<Comment> addComment(@RequestBody Comment comment){
         return ResponseEntity.ok(commentService.addComment(comment));
     }
-    @GetMapping
+
+    @GetMapping("/comment")
     public ResponseEntity<List<Comment>> getAllComments(){
+        if (commentService.getAllComments().isEmpty())
+            throw new NotFoundException("No comments found");
+
         return ResponseEntity.ok(commentService.getAllComments());
     }
-    @GetMapping("/user/{id}")
+
+    @GetMapping("/comment/user/{id}")
     public ResponseEntity<List<Comment>> getCommentByUser(@PathVariable int id){
+        if (commentService.getCommentByUser(id).isEmpty())
+            throw new NotFoundException("No comments found");
+
         return ResponseEntity.ok(commentService.getCommentByUser(id));
     }
-    @GetMapping("/post/{id}")
+
+    @GetMapping("/comment/post/{id}")
     public ResponseEntity<List<Comment>> getCommentByPost(@PathVariable int id){
+        if (commentService.getCommentByPost(id).isEmpty())
+            throw new NotFoundException("No comments found");
+
         return ResponseEntity.ok(commentService.getCommentByPost(id));
     }
-
 }
