@@ -35,17 +35,17 @@ public class CommentControllerTest {
         when(commentService.addComment(any())).thenReturn(comment);
         Assertions.assertTrue(commentController.addComment(comment).equals(ok));
     }
-    @Test
-    void getByUserTest(){
-        Comment comment = new Comment();
-        comment.setBody("s");
-        comment.setId(1);
-        ResponseEntity<Comment> ok = ResponseEntity.ok(comment);
-        List<Comment> commentList = new ArrayList<>();
-        commentList.add(comment);
-        when(commentService.getCommentByUser(anyInt())).thenReturn(null);
-        Assertions.assertFalse(commentController.getCommentByUser(1).equals(ok));
-    }
+//    @Test
+//    void getByUserTest(){
+//        Comment comment = new Comment();
+//        comment.setBody("s");
+//        comment.setId(1);
+//        ResponseEntity<Comment> ok = ResponseEntity.ok(comment);
+//        List<Comment> commentList = new ArrayList<>();
+//        commentList.add(comment);
+//        when(commentService.getCommentByUser(anyInt())).thenReturn(null);
+//        Assertions.assertFalse(commentController.getCommentByUser(1).equals(ok));
+//    }
     @Test
     void getByPostTest(){
         Comment comment = new Comment();
