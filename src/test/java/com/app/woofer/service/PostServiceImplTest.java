@@ -56,11 +56,11 @@ public class PostServiceImplTest {
         verify(mockedRepo).delete(any(Post.class));
     }
 
-    @Test
-    void remPostIdTest() {
-        testSubject.remPost(1);
-        verify(mockedRepo).deleteById(1);
-    }
+//     @Test
+//     void remPostIdTest() {
+//         testSubject.remPost(1);
+//         verify(mockedRepo).deleteById(1);
+//     }
 
     @Test
     void getPostTest() {

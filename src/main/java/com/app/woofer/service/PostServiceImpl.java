@@ -1,6 +1,8 @@
 package com.app.woofer.service;
 
+import com.app.woofer.model.Comment;
 import com.app.woofer.model.Post;
+import com.app.woofer.repository.CommentRepository;
 import com.app.woofer.repository.PostRepository;
 import com.app.woofer.repository.UserRepository;
 import org.apache.logging.log4j.LogManager;
@@ -16,6 +18,7 @@ public class PostServiceImpl implements PostService{
 
     PostRepository postRepository;
     UserRepository userRepository;
+    CommentRepository commentRepository;
     private static final Logger logger = LogManager.getLogger(PostServiceImpl.class);
     private String blankPass = "password intentionally left blank";
 
@@ -23,6 +26,11 @@ public class PostServiceImpl implements PostService{
     public PostServiceImpl(PostRepository postRepository, UserRepository userRepository) {
         this.postRepository = postRepository;
         this.userRepository = userRepository;
+    }
+
+    @Autowired
+    public void setCommentRepository(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
     }
 
     @Override
@@ -50,6 +58,7 @@ public class PostServiceImpl implements PostService{
     @Override
     public void remPost(int id) {
         logger.info("Post deleted with { ID: {} }", id);
+        commentRepository.deleteAll(commentRepository.findByPost_Id(id));
         postRepository.deleteById(id);
     }
 
