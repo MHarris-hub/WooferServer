@@ -2,6 +2,8 @@ package com.app.woofer.model.ret;
 
 import com.app.woofer.model.Post;
 import lombok.Data;
+
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +16,7 @@ public class ReturnPost {
     private int userId;
     private int likes;
     private int comments;
+    private Instant timestamp;
 
     public ReturnPost() {
     }
@@ -26,6 +29,7 @@ public class ReturnPost {
         comments = 0;
         userId = post.getUserID();
         Id = post.getId();
+        timestamp = post.getTimestamp();
     }
 
     public static List<ReturnPost> listConvert(List<Post> x){

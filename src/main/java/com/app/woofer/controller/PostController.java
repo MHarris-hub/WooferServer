@@ -1,5 +1,6 @@
 package com.app.woofer.controller;
 
+import com.app.woofer.model.Post;
 import com.app.woofer.model.ret.ReturnPost;
 import com.app.woofer.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
