@@ -35,7 +35,7 @@ public class Post {
             inverseJoinColumns = { @JoinColumn(name = "userId") }
     )
     private List<User> likers;
-//
+
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "timestamp")
