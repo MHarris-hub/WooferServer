@@ -41,6 +41,15 @@ public class LikeServiceImp implements LikeService {
     }
 
     @Override
+    public int unLikePost(int userId, int postId) {
+        for (Likes l : likesRepository.findByUserId(userId))
+            if (l.getPostId() == postId) likesRepository.delete(l);
+        int ret = 0;
+        for (Likes l : likesRepository.findByPostId(postId)) ret++;
+        return ret;
+    }
+
+    @Override
     public List<Integer> likedPosts(int userId) {
         List<Integer> ret = new ArrayList<>();
         List<Likes> find = likesRepository.findByUserId(userId);

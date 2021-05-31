@@ -6,4 +6,6 @@ public interface LikeService {
     int likePost(int userId, int postId);
 
     List<Integer> likedPosts(int userId);
+
+    int unLikePost(int userId, int postId);
 }
