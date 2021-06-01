@@ -3,7 +3,6 @@ package com.app.woofer.service;
 import com.app.woofer.model.Follow;
 import com.app.woofer.model.User;
 import com.app.woofer.repository.FollowRepository;
-import org.aspectj.lang.annotation.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,9 +10,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class FollowServiceImplTest {
 
@@ -56,4 +54,24 @@ public class FollowServiceImplTest {
         Assertions.assertFalse(followService.addFollower(followuser) == followList);
     }
 
+    @Test
+    void getFollowerByFollowerTest(){
+        followService.getFollowerByFollowId(1);
+        verify(followRepository).findByFollower_Id(1);
+    }
+    @Test
+    void getFollowerByUserTest(){
+        followService.getFollowerByUserId(1);
+        verify(followRepository).findByUser_Id(1);
+    }
+    @Test
+    void unfollowTest(){
+        followService.unfollow(1);
+        verify(followRepository).deleteById(1);
+    }
+    @Test
+    void getAllTest(){
+        followService.getAllFollowers(1);
+        verify(followRepository).countByUser_Id(1);
+    }
 }

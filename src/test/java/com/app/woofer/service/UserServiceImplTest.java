@@ -1,5 +1,6 @@
 package com.app.woofer.service;
 
+import com.app.woofer.exceptions.NotFoundException;
 import com.app.woofer.exceptions.WooferException;
 import com.app.woofer.model.User;
 import com.app.woofer.repository.UserRepository;
@@ -38,14 +39,14 @@ public class UserServiceImplTest {
             userService.login(null);
         });
     }
-//    @Test
-//    void loginTest2(){
-//
-//        when(bcrypt.matches(anyString(),anyString())).thenReturn(false);
-//        Assertions.assertThrows(WooferException.class,()->{
-//            userService.login(new User(1));
-//        });
-//    }
+    @Test
+    void loginTest2(){
+
+        when(bcrypt.matches(anyString(),anyString())).thenReturn(false);
+        Assertions.assertThrows(NotFoundException.class,()->{
+            userService.login(new User(1));
+        });
+    }
     @Test
     void addUserTest(){
         User user = new User(1);

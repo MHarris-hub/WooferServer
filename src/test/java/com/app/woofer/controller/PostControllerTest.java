@@ -59,15 +59,14 @@ public class PostControllerTest {
         Assertions.assertEquals(output.getBody(),"1");
     }
 
-//    @Test
-//    void getPostsByUserTest() {
-//        List<Post> ret = new ArrayList<>();
-//        ret.add(generatePost(1));
-//        when(mockPostService.getByUserID(anyInt())).thenReturn(ret);
-//        List<ReturnPost> output = testSubject.getPostsByUser(1).getBody();
-//        Assertions.assertEquals(output.get(0).getId(),1);
-//        Assertions.assertEquals(output.get(0).getBody(),"1");
-//    }
+    @Test
+    void getPostsByUserTest() {
+        List<Post> ret = new ArrayList<>();
+        ret.add(generatePost(1));
+        when(mockPostService.getByUsername(anyString())).thenReturn(ret);
+        List<ReturnPost> output = testSubject.getPostsByUser("ale").getBody();
+        Assertions.assertEquals(output.get(0).getId(),1);
+    }
 
     @Test
     void getAllPostsTest() {
