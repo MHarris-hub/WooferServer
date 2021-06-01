@@ -26,23 +26,7 @@ public class WooferConfiguration extends WebSecurityConfigurerAdapter{
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
-				.antMatchers("/user/*").permitAll()
-				.antMatchers("/user/*/*").permitAll()
-				.antMatchers("/login").permitAll()
-				.antMatchers("/user").permitAll()
-				.antMatchers("/post").permitAll()
-				.antMatchers("/posts").permitAll()
-				.antMatchers("/posts/*").permitAll()
-				.antMatchers("/posts/*/*").permitAll()
-				.antMatchers("/post/*").permitAll()
-				.antMatchers("/like/*/*").permitAll()
-				.antMatchers("/like/*").permitAll()
-				.antMatchers("/comment").permitAll()
-				.antMatchers("/follow/*").permitAll()
-				.antMatchers("/follow/*/*").permitAll()
-				.antMatchers("/follow").permitAll()
-				.antMatchers("/comment/user/*").permitAll()
-				.antMatchers("/comment/post/*").permitAll()
+				.antMatchers("/**").permitAll()
 				.anyRequest().authenticated();
 	}
 	@Bean

@@ -48,6 +48,7 @@ public class FollowServiceImpl implements  FollowService{
         logger.info("Followers retrieved with follow id { ID: {} }", id);
         return followRepository.findByFollower_Id(id);
     }
+    @Override
     public List<Follow> getFollowerByUserId(int id) {
         logger.info("Followers retrieved for User with { ID: {} }", id);
         return followRepository.findByUser_Id(id);

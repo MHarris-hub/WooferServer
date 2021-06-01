@@ -2,6 +2,7 @@ package com.app.woofer.service;
 
 import com.app.woofer.model.Post;
 import com.app.woofer.model.User;
+import com.app.woofer.repository.CommentRepository;
 import com.app.woofer.repository.PostRepository;
 import com.app.woofer.repository.UserRepository;
 import org.junit.jupiter.api.Assertions;
@@ -21,6 +22,7 @@ public class PostServiceImplTest {
     private PostService testSubject;
     private PostRepository mockedRepo;
     private UserRepository mockedUserRepo;
+    private CommentRepository commentRepository;
 
     Post generatePost(int seed) {return new Post(seed, new User(seed, null, seed+"", seed+"", seed+"", null), null, null, seed, seed+"");}
 
@@ -28,7 +30,8 @@ public class PostServiceImplTest {
     void setUp() {
         mockedRepo = mock(PostRepository.class);
         mockedUserRepo = mock(UserRepository.class);
-        testSubject = new PostServiceImpl(mockedRepo, mockedUserRepo);
+        commentRepository = mock(CommentRepository.class);
+        testSubject = new PostServiceImpl(mockedRepo, mockedUserRepo, commentRepository);
     }
 
     @Test
@@ -56,11 +59,12 @@ public class PostServiceImplTest {
         verify(mockedRepo).delete(any(Post.class));
     }
 
-//     @Test
-//     void remPostIdTest() {
-//         testSubject.remPost(1);
-//         verify(mockedRepo).deleteById(1);
-//     }
+     @Test
+     void remPostIdTest() {
+        when(commentRepository.findByPost_Id(1)).thenReturn(null);
+        testSubject.remPost(1);
+         verify(mockedRepo).deleteById(1);
+     }
 
     @Test
     void getPostTest() {

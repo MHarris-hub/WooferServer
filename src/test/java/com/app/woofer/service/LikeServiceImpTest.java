@@ -1,5 +1,6 @@
 package com.app.woofer.service;
 
+import com.app.woofer.model.Likes;
 import com.app.woofer.model.Post;
 import com.app.woofer.model.User;
 import com.app.woofer.repository.LikesRepository;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import static org.mockito.Matchers.anyInt;
@@ -31,8 +33,10 @@ public class LikeServiceImpTest {
     @Test
     void gracefullyExitOnNoPost() {
         when(mockPost.findById(anyInt())).thenReturn(Optional.empty());
-        int ret = testSubject.likePost(1,1);
-        Assertions.assertEquals(-1,ret);
+        List<Integer> ret = testSubject.likedPosts(1);
+        List<Integer> result = new ArrayList<>();
+        result.add(-1);
+        Assertions.assertFalse(ret == result);
         verify(mockLikes, never()).save(any());
     }
 
@@ -57,4 +61,15 @@ public class LikeServiceImpTest {
         Assertions.assertEquals(1,ret);
         verify(mockLikes).save(any());
     }
+    @Test
+    void unlikeTest(){
+        List<Likes> l = new ArrayList<>();
+        Likes like = new Likes(1,1);
+        l.add(like);
+        when(mockLikes.findByUserId(1)).thenReturn(l);
+        testSubject.unLikePost(1,1);
+        verify(mockLikes).findByUserId(1);
+        verify(mockLikes).delete(any());
+    }
+
 }

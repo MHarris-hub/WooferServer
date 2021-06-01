@@ -23,14 +23,10 @@ public class PostServiceImpl implements PostService{
     private String blankPass = "password intentionally left blank";
 
     @Autowired
-    public PostServiceImpl(PostRepository postRepository, UserRepository userRepository) {
+    public PostServiceImpl(PostRepository postRepository, UserRepository userRepository, CommentRepository commentRepository) {
         this.postRepository = postRepository;
         this.userRepository = userRepository;
-    }
-
-    @Autowired
-    public void setCommentRepository(CommentRepository commentRepository) {
-        this.commentRepository = commentRepository;
+        this.commentRepository = commentRepository;//was autowired with a setter, changed to constructor
     }
 
     @Override
